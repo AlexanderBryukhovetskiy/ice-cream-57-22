@@ -1,0 +1,22 @@
+.review__title {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 255%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100px;
+  background: repeating-linear-gradient(
+    white,
+    white 30px,
+    #e1e1e1 33px,
+    #e1e1e1 20px
+  );
+}
+
+.review__picture {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 32px;
+}
