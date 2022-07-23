@@ -26,6 +26,7 @@
   line-height: 255%;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
   height: 150px;
   background: repeating-linear-gradient(
     white,
@@ -39,4 +40,12 @@
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 32px;
+}
+
+.review__name {
+  text-align: center;
+}
+
+.review__name::after {
+  background-image: url(/src/images/symbol-defs.svg#icon-house);
 }
