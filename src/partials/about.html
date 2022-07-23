@@ -1,65 +1,73 @@
 <section class='about'>
     <div class='container'>
-        <h2 class='about__hero'>tradition and love</h2>
-        <h3 class='about__question'>how it’s made?</h3>
-        <div class='about__section'>
+        <h2 class='about-hero'>tradition and love</h2>
+        <h3 class='about-question'>how it’s made?</h3>
+        <div class='about-section'>
             <ul class='activity'>
-                <li class='activity__item'>
-                    <p class='activity__text'>
+                <li class='activity-jpg'>
+                  <picture>
+                    <source srcset=" ./images/about-pic1-desktop.png,
+                                           ./images/about-pic1-desktop-2x.png"
+                            media="(min-width: 1200px)">
+                    <source srcset=" ./images/about-pic1-tablet.png,
+                                           ./images/about-pic1-tablet-2x.png"
+                            media="(min-width: 768px)">
+                    <source srcset=" ./images/about-pic1-mobile.png,
+                                           ./images/about-pic1-mobile-2x.png "
+                            media="(min-width: 320px)">
+                    <img class='activity-gpg__bloc' src="./images/about-pic1-desktop.png" alt="">
+                  </picture>
+                </li>
+                <li class='activity-item'>
+                    <p class='activity-text'>
                     Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros.
                     Maecenas eleifend erat at justo fringilla.
                     </p>
-                    <p class='activity__taitle'>
+
+                    <p class='activity-taitle'>
                     Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat.
-                    Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt. Aliquam erat
+                    Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.
+                      <br/>
+                      <br/>
+                      Aliquam erat
                     volutpat. Aenean accumsan.
                     </p>
-                  <button class='activity__button'>Read more</button>
-                </li>
-                <li class='activity-gpg'>
-                    <picture>
-                        <source srcset=" 1x,
-                                         2x
-                                " media="(min-width: 1200px)">
-                        <source srcset=" 1x,
-                                         2x
-                                " media="(min-width: 768px)">
-                        <source srcset=" 1x,
-                                         2x
-                                " media="(min-width: 480px)">
-                        <img class='activity-gpg__bloc' src="" alt="">
-                    </picture>
+                  <button class='activity-button'>Read more
+                    <svg class="activity-svg" width="10" height="16" >
+                      <use href="./images/Vector 1.svg"></use>
+                    </svg>
+                  </button>
                 </li>
             </ul>
         </div>
-        <div class='about__section'>
-            <ul class='about-information'>
-                <li class='about-information__imet'>
-                    <div class='about-information__imet'>
-                        <svg class='about-information__icon'>
-                            <use href=""></use>
+        <div class='about-information'>
+            <ul class='about-information_section'>
+                <li class='about-information_imet'>
+                    <div class='about-information_item'>
+                        <svg class='about-information_icon' width="50" height="50">
+                            <use href="./images/symbol-defs.svg#icon-glass"></use>
                         </svg>
                     </div>
-                    <h3 class='about-information__subject'>721</h3>
-                    <p class='about-information__text'>Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+                    <h3 class='about-information_subject'>721</h3>
+                    <p class='about-information_text'>Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
                 </li>
-                <li class='about-information__imet'>
-                    <div class='about-information__imet'>
-                        <svg class='about-information__icon'>
-                            <use href=""></use>
+                <li class='about-information_imet'>
+                    <div class='about-information_item'>
+                        <svg class='about-information_icon' width="50" height="50">
+                          <use href="./images/symbol-defs.svg#icon-apples"></use>
                         </svg>
                     </div>
-                    <h3 class='about-information__subject'>16kg</h3>
-                    <p class='about-information__text'>Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+                    <h3 class='about-information_subject'>16kg</h3>
+                    <p class='about-information_text'>Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
                 </li>
-                <li class='about-information__imet'>
-                    <div class='about-information__imet'>
-                        <svg class='about-information__icon'>
-                            <use href=""></use>
+                <li class='about-information_imet'>
+                    <div class='about-information_item'>
+                        <svg class='about-information_icon' width="50" height="50">
+                          <use href="./images/symbol-defs.svg#icon-heart"></use>
                         </svg>
                     </div>
-                    <h3 class='about-information__subject'>84</h3>
-                    <p class='about-information__text'>Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+                    <h3 class='about-information_subject'>84</h3>
+                    <p class='about-information_text'>Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
                 </li>
             </ul>
         </div>
