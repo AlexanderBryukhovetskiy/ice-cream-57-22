@@ -3,10 +3,14 @@
   padding-top: 60px;
   list-style: none;
   text-decoration: none;
-
   &-section{
     @media screen and (min-width: 768px) {
-
+      margin-left: 12px;
+      margin-right: 12px;
+      }
+    @media screen and (min-width: 1200px) {
+      margin-left: -4px;
+      margin-right: -4px;
     }
   }
   &-hero{
@@ -23,6 +27,11 @@
     @media screen and (min-width: 768px) {
       font-size: 26px;
       line-height: 30px;
+      padding-bottom: 16px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 30px;
+      line-height: 34px;
     }
   }
   &-question{
@@ -41,6 +50,12 @@
       font-size: 48px;
       line-height: 55px;
       letter-spacing: 0.04em;
+      padding-bottom: 40px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 58px;
+      line-height: 66px;
+      padding-bottom: 60px;
     }
   }
 }
@@ -55,12 +70,16 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
   }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: flex-end
+  }
   &-jpg{
-    @media screen and (min-width: 768px) {
-  margin-left: 32px;
+    @media screen and (min-width: 1200px) {
+      padding-bottom: 60px;
     }
   }
   &-item {
@@ -79,6 +98,10 @@
       width: 334px;
       //display: none;
       //background-color: rebeccapurple;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 501px;
+      padding-left: 99px;
     }
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -115,6 +138,14 @@
     font-size: 12px;
     line-height: 162%;
     color: #000000;
+    @media screen and (min-width: 768px) {
+    width: 334px;
+      font-size: 14px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 463px;
+      font-size: 16px;
+    }
   }
   &-taitle{
     padding-bottom: 20px;
@@ -126,6 +157,15 @@
     font-size: 12px;
     line-height: 162%;
     color: #907E82;
+    @media screen and (min-width: 768px) {
+      width: 334px;
+      font-size: 14px;
+      padding-bottom: 40px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 463px;
+
+    }
   }
   &-taitle-span{
     margin-top: 20px;
@@ -134,31 +174,73 @@
     margin-bottom: 40px;
     width: 176px;
     height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 37px;
+    padding-right: 37px;
+
 
     color: #D41443;
     background: #FFFFFF;
     border-radius: 22px;
     border-color:rgba(0, 0, 0, 0.0);
+    @media screen and (min-width: 1200px) {
+    margin-bottom: 121px;
+    }
   }
   &-svg{
-    fill: #d41443;
+    fill: tomato;
+    //background-color: #d41443;
+    color: #d41443;
+
   }
 }
 .about-information{
   display: flex;
   justify-content: flex-start;
+  @media screen and (min-width: 768px) {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: -4px;
+    margin-right: -4px;
+  }
   &_section{
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
+    @media screen and (min-width: 768px) {
+  display: flex;
+    }
   }
   &_imet{
-
+    @media screen and (min-width: 768px) {
+      width: 180px;
+      margin-right: 4px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 288px;
+      margin-right: 80px;
+    }
+  }
+  &_imet-left{
+    @media screen and (min-width: 1200px) {
+      margin-left: 35px;
+      width: 317px;
+    }
   }
   &_item{
     fill: #FFA5BA;
-    padding-bottom: 16px;
+    margin-bottom: 16px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 36px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 40px;
+    }
   }
   &_icon{
 
@@ -175,9 +257,19 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #D41443;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 13px;
+      font-size: 48px;
+      line-height: 55px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 16px;
+      font-size: 58px;
+      line-height: 66px;
+    }
   }
   &_text{
-    padding-bottom: 32px;
+    padding-bottom: 87px;
     width: 230px;
     font-family: 'DM Sans';
     font-style: normal;
@@ -185,6 +277,23 @@
     font-size: 12px;
     line-height: 170%;
     color: #000000;
+    @media screen and (min-width: 768px) {
+      width: 180px;
+      font-size: 14px;
+      padding-bottom: 251px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 288px;
+      font-size: 16px;
+      line-height: 176%;
+      letter-spacing: 0.02em;
+      padding-bottom: 209px;
+    }
+  }
+  &_text-width{
+    @media screen and (min-width: 1200px) {
+      width: 317px;
+    }
   }
 }
 .container {
