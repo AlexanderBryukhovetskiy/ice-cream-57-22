@@ -2,18 +2,91 @@
     display: flex;
     height: 502px;
     max-width: 1600px;
-    background-color:$backgraund-color ;
+    background-color:$backgraund-color;
+    background-repeat: no-repeat;
+
+            @media screen and (max-width: 767px) {
+                & {
+                    background-image:
+                         url(/src/images/slider-pic7-mobile.png),
+                          url(/src/images/ellipse-pink-mobile.png);
+                    background-position:
+                         top 92px left 117px,
+                         top 83px 36px;
+                
+                }
+                 @media screen and (min-resolution: 2dppx) {
+                   & {
+                        background-image:
+                            url(/src/images/slider-pic7-mobile-2x.png),
+                            url(/src/images/ellipse-pink-mobile-2x.png);
+                            }
+                     }
+            }
+
     
         @media screen and (min-width: 768px) {
                 & {
                     height: 416px;
+                    background-image:
+                            url(/src/images/slider-pic7-tablet.png),
+                            url(/src/images/slider-pic4-tablet.png),
+                            url(/src/images/slider-pic5-tablet.png),
+                            url(/src/images/ellipse-pink-tablet.png),
+                            url(/src/images/ellipse-white-tablet.png),
+                            url(/src/images/ellipse-white-tablet.png);
+                        background-position:
+                            left 332px top 80px,
+                            left 546px  top 265px,
+                            left 32px top 246px,
+                            left 248px top 43px,
+                            left 746px top 100px,
+                            left 746px top 160px;
+                               
                 }
+                      @media screen and (min-resolution: 2dppx) {
+                             & {
+                                 background-image:
+                                    url(/src/images/slider-pic7-table2x.png),
+                                    url(/src/images/slider-pic4-tablet-2x.png),
+                                    url(/src/images/slider-pic5-tablet-2x.png),
+                                    url(/src/images/ellipse-pink-tablet-2x.png),
+                                    url(/src/images/ellipse-white-tablet-2x.png),
+                                    url(/src/images/ellipse-white-tablet-2x.png);
+                                    }
+                                }
             }
         
             @media screen and (min-width:1200px) {
                 & {
                     height: 664px;
+                    background-image:
+                            url(/src/images/slider-pic7-desktop.png),
+                            url(/src/images/slider-pic4-desktop.png),
+                            url(/src/images/slider-pic5-desktop.png),
+                            url(/src/images/ellipse-pink-desktop.png),
+                            url(/src/images/ellipse-white-desktop.png),
+                            url(/src/images/ellipse-white-desktop.png);
+                        background-position:
+                            left 646px top 108px,
+                            left 880px top 423px,
+                            left 16px top 388px,
+                            left 517px top 54px,
+                            left 1168px top 140px,
+                            left 1168px top 228px;
+
                 }
+                 @media screen and (min-resolution: 2dppx) {
+                             & {
+                                 background-image:
+                                    url(/src/images/slider-pic7-desktop-2x.png),
+                                    url(/src/images/slider-pic4-desktop-2x.png),
+                                    url(/src/images/slider-pic5-desktop-2x.png),
+                                    url(/src/images/ellipse-pink-desktop-2x.png),
+                                    url(/src/images/ellipse-white-desktop-2x.png),
+                                    url(/src/images/ellipse-white-desktop-2x.png);
+                                    }
+                                }
             }
 }
 
@@ -176,16 +249,19 @@
         text-transform: uppercase;
         color: $title-text-color;
 
-        // background-image: url(/src/images/ellipse-white-tablet.png);
-        // background-position-x: 130%;
-        // background-position-y: -12%;
-        // background-repeat: no-repeat;
-
         @media screen and (min-width:1200px) {
                 font-size: 46px;
                 line-height: 1.15;
             }
 }
+
+.cafe-list__item:not(:last-child){
+    margin-bottom: 17px;
+}
+
+
+    
+
 
 .cafe-list__item-text {
     font-family: 'DM Sans';
