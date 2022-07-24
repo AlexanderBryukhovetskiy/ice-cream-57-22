@@ -185,6 +185,11 @@
     background: #FFFFFF;
     border-radius: 22px;
     border-color:rgba(0, 0, 0, 0.0);
+    &:hover,
+    &:focus {
+      background: #ECEBEB;
+    }
+
     @media screen and (min-width: 1200px) {
     margin-bottom: 121px;
     }
