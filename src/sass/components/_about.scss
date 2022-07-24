@@ -69,13 +69,15 @@
     @media screen and (max-width: 767px) {
       //background-color: tomato;
       background-image: url(../images/about-bg-desktop.png);
+      //background-size: contain;
+      background-size: cover;
     }
 
 
     @media screen and (min-width: 768px) {
       margin-left: 32px;
       width: 334px;
-      background-image: none;
+      //display: none;
       //background-color: rebeccapurple;
     }
 
