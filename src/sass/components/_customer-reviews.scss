@@ -34,7 +34,20 @@
     #e1e1e1 32px,
     #e1e1e1 20px
   );
+  background-image: url(/src/images/marks.svg);
+  background-repeat: no-repeat;
 }
+
+// .review__title::after {
+//   background-image: url(/src/images/about-bg-desktop-2x.png);
+//   fill: pink;
+//   width: 50px;
+//   height: 50px;
+//   border: 0;
+//   display: block;
+//   padding: 0;
+//   position: absolute;
+// }
 
 .review__picture {
   margin-right: auto;
