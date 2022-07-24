@@ -22,6 +22,8 @@
     font-size: 18px;
     line-height: 21px;
     text-align: center;
+    display: flex;
+    justify-content: center;
     text-transform: uppercase;
     color: #FFA5BA;
     @media screen and (min-width: 768px) {
@@ -84,14 +86,6 @@
   }
   &-item {
     width: 280px;
-    height: 133 pxd;
-    @media screen and (max-width: 767px) {
-      //background-color: tomato;
-      background-image: url(../images/about-bg-desktop.png);
-      //background-size: contain;
-      background-size: cover;
-    }
-
 
     @media screen and (min-width: 768px) {
       margin-left: 32px;
@@ -104,31 +98,31 @@
       padding-left: 99px;
     }
 
-    @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx){
+  }
+  &-milc-mob{
+    @media screen and (max-width: 767px) {
+      background-repeat:no-repeat;
+      background-position: 0px 73px;
+      background-size: 280px;
       background-image:
         url(../images/about-bg-mobile.png);
+
     }
   }
-  //&-milc{
-  //  width: 280px;
-  //  height: 133pxd;
-  //
-  //  @media screen and (min-device-pixel-ratio: 2),
-  //  screen and (min-resolution: 192dpi),
-  //  screen and (min-resolution: 2dppx){
-  //    background-image:
-  //      url(../images/about-bg-desktop.png);
-  //  }
-  //
-  //  @media screen and (min-device-pixel-ratio: 2),
-  //  screen and (min-resolution: 192dpi),
-  //  screen and (min-resolution: 2dppx){
-  //    background-image:
-  //      url(../images/about-bg-mobile.png);
-  //  }
-  //}
+  &-milc{
+    background-image: none;
+    @media screen and (min-width: 1200px) {
+      background-image:
+        url(../images/about-bg-desktop.png);
+      background-size: cover;
+    }
+    //@media screen and (min-device-pixel-ratio: 2),
+    //screen and (min-resolution: 192dpi),
+    //screen and (min-resolution: 2dppx){
+    //  background-image:
+    //    url(../images/about-bg-mobile.png);
+    //}
+  }
   &-text{
     padding-bottom: 40px;
     width: 220px;
@@ -232,8 +226,13 @@
     }
   }
   &_imet-left{
+    @media screen and (min-width: 768px) {
+      width: 180px;
+      margin-right: 22px;
+    }
     @media screen and (min-width: 1200px) {
       margin-left: 35px;
+      margin-right: 80px;
       width: 317px;
     }
   }
@@ -274,7 +273,7 @@
     }
   }
   &_text{
-    padding-bottom: 87px;
+    padding-bottom: 32px;
     width: 230px;
     font-family: 'DM Sans';
     font-style: normal;
