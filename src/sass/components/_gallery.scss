@@ -7,7 +7,7 @@
     background-color: #e5e5e5;
     background-image: linear-gradient(to bottom,
             #fff5f6 20%,
-            #ffffff),
+            #e5e5e5),
         url(/src/images/gallery-mobile.png);
 
 
@@ -19,7 +19,7 @@
         background-color: #e5e5e5;
         background-image: linear-gradient(to bottom,
                 #fff5f6 20%,
-                #ffffff),
+                #e5e5e5),
             url(/src/images/gallery-mobile-2x.png);
     }
 
@@ -31,14 +31,14 @@
         background-color: #e5e5e5;
         background-image: linear-gradient(to bottom,
                 #fff5f6 50%,
-                #ffffff),
+                #e5e5e5),
             url(/src/images/gallery-tablet.png);
 
         @include retina {
             background-color: #e5e5e5;
             background-image: linear-gradient(to bottom,
                     #fff5f6 50%,
-                    #ffffff),
+                    #e5e5e5),
                 url(/src/images/gallery-tablet-2x.png);
 
         }
@@ -47,8 +47,7 @@
     @include desktop {
         max-width: 1013px;
         height: 430px;
-        padding-left: 94px;
-        padding-right: 94px;
+
 
         background-color: #e5e5e5;
         background-image: linear-gradient(to bottom,
