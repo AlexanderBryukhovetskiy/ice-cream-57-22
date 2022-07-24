@@ -1,0 +1,1 @@
+{"mappings":"AAAAA,EAAE,gBAAgBC,MAAM,CACtBC,UAAU,EACVC,MAAM,EACNC,aAAc,EACdC,eAAgB","sources":["src/index.js"],"sourcesContent":["$('.single-item').slick({\n  infinite: true,\n  dots: true,\n  slidesToShow: 1,\n  slidesToScroll: 1,\n});\n"],"names":["$","slick","infinite","dots","slidesToShow","slidesToScroll"],"version":3,"file":"index.35e2e5c5.js.map"}
