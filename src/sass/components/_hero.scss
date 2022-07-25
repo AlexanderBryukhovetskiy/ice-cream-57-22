@@ -1,20 +1,27 @@
+.hero-wrap{
+    background-color:$backgraund-color ;
+}
 .hero {
     display: flex;
     height: 502px;
     max-width: 1600px;
     background-color:$backgraund-color;
     background-repeat: no-repeat;
+    background-image:
+            url(/src/images/slider-pic7-mobile.png),
+            url(/src/images/ellipse-pink-mobile.png);
+    background-position:
+            top 92px left 60%,
+            top 83px left 36px;
 
-            @media screen and (max-width: 767px) {
-                & {
-                    background-image:
-                         url(/src/images/slider-pic7-mobile.png),
-                          url(/src/images/ellipse-pink-mobile.png);
-                    background-position:
-                         top 92px left 117px,
-                         top 83px 36px;
+                    @media screen and (min-width: 390px) {
+                            & {
+                            background-position:
+                                    top 92px left 60%,
+                                    top 83px left 60%;
+                            }}
+           
                 
-                }
                  @media screen and (min-resolution: 2dppx) {
                    & {
                         background-image:
@@ -22,26 +29,23 @@
                             url(/src/images/ellipse-pink-mobile-2x.png);
                             }
                      }
-            }
+            
 
     
         @media screen and (min-width: 768px) {
                 & {
+                    flex-direction: column;
                     height: 416px;
                     background-image:
                             url(/src/images/slider-pic7-tablet.png),
                             url(/src/images/slider-pic4-tablet.png),
                             url(/src/images/slider-pic5-tablet.png),
-                            url(/src/images/ellipse-pink-tablet.png),
-                            url(/src/images/ellipse-white-tablet.png),
-                            url(/src/images/ellipse-white-tablet.png);
+                            url(/src/images/ellipse-pink-tablet.png);
                         background-position:
                             left 332px top 80px,
                             left 546px  top 265px,
                             left 32px top 246px,
                             left 248px top 43px,
-                            left 746px top 100px,
-                            left 746px top 160px;
                                
                 }
                       @media screen and (min-resolution: 2dppx) {
@@ -50,9 +54,7 @@
                                     url(/src/images/slider-pic7-table2x.png),
                                     url(/src/images/slider-pic4-tablet-2x.png),
                                     url(/src/images/slider-pic5-tablet-2x.png),
-                                    url(/src/images/ellipse-pink-tablet-2x.png),
-                                    url(/src/images/ellipse-white-tablet-2x.png),
-                                    url(/src/images/ellipse-white-tablet-2x.png);
+                                    url(/src/images/ellipse-pink-tablet-2x.png);
                                     }
                                 }
             }
@@ -64,16 +66,14 @@
                             url(/src/images/slider-pic7-desktop.png),
                             url(/src/images/slider-pic4-desktop.png),
                             url(/src/images/slider-pic5-desktop.png),
-                            url(/src/images/ellipse-pink-desktop.png),
-                            url(/src/images/ellipse-white-desktop.png),
-                            url(/src/images/ellipse-white-desktop.png);
+                            url(/src/images/ellipse-pink-desktop.png);
+            
                         background-position:
                             left 646px top 108px,
                             left 880px top 423px,
                             left 16px top 388px,
-                            left 517px top 54px,
-                            left 1168px top 140px,
-                            left 1168px top 228px;
+                            left 517px top 54px;
+                          
 
                 }
                  @media screen and (min-resolution: 2dppx) {
@@ -82,9 +82,7 @@
                                     url(/src/images/slider-pic7-desktop-2x.png),
                                     url(/src/images/slider-pic4-desktop-2x.png),
                                     url(/src/images/slider-pic5-desktop-2x.png),
-                                    url(/src/images/ellipse-pink-desktop-2x.png),
-                                    url(/src/images/ellipse-white-desktop-2x.png),
-                                    url(/src/images/ellipse-white-desktop-2x.png);
+                                    url(/src/images/ellipse-pink-desktop-2x.png);
                                     }
                                 }
             }
@@ -109,7 +107,7 @@
                 margin-bottom: 108px;
             }
 }
-.hero__ice-cream {}
+// .hero__ice-cream {}
 
 .hero__titel {
     
@@ -176,12 +174,7 @@
         border-style: hidden;
         color:$rectangel-backgraund-text-color;
 
-    @media screen and (min-width: 768px) {
-            & {
-               
-            }
-        }
-    
+       
         @media screen and (min-width:1200px) {
             & {
                 width: 107px;
@@ -249,10 +242,36 @@
         text-transform: uppercase;
         color: $title-text-color;
 
+        background-image: url(/src/images/ellipse-white-tablet.png);
+        background-repeat: no-repeat;
+        background-position: right top;
+        padding-right: 8px;
+        padding-top: 3px;
+
+        @media screen and (min-resolution: 2dppx) {
+                & {
+                    background-image:
+                    url(/src/images/ellipse-white-tablet-2x.png);
+                       
+            }
+        }
+
         @media screen and (min-width:1200px) {
                 font-size: 46px;
                 line-height: 1.15;
+                padding-right: 17px;
+                padding-top: 4px;
+                background-image: url(/src/images/ellipse-white-desktop.png);
+
+                @media screen and (min-resolution: 2dppx) {
+                        & {
+                            background-image:
+                                url(/src/images/ellipse-white-desktop-2x.png);
+                
+                        }
+                    }
             }
+
 }
 
 .cafe-list__item:not(:last-child){
@@ -286,7 +305,7 @@
     margin-left: 184px;
 
         @media screen and (min-width:1200px) {
-            margin-left: 269px;
+            margin-left: 229px;
         }
 }
 .hero__milk {
