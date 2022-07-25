@@ -1,71 +1,32 @@
 .gallery {
     max-width: 320px;
     height: 136px;
+
     margin-left: auto;
     margin-right: auto;
-
-    background-color: #e5e5e5;
-    background-image: linear-gradient(to bottom,
-            #fff5f6 20%,
-            #e5e5e5),
-        url(/src/images/gallery-mobile.png);
-
 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 
-    @include retina {
-        background-color: #e5e5e5;
-        background-image: linear-gradient(to bottom,
-                #fff5f6 20%,
-                #e5e5e5),
-            url(/src/images/gallery-mobile-2x.png);
+    background-color: #e5e5e5;
+    background-image: linear-gradient (to bottom, rgba(255, 245, 246, 1), rgba(250, 250, 250, 1));
+}
+
+.gallery__img {
+    @media screen and (max-width: 478px) {
+        display: block;
+        width: 100%;
+        height: auto;
     }
 
     @include tablet {
-
-        max-width: 768px;
+        width: 768px;
         height: 327px;
-
-        background-color: #e5e5e5;
-        background-image: linear-gradient(to bottom,
-                #fff5f6 50%,
-                #e5e5e5),
-            url(/src/images/gallery-tablet.png);
-
-        @include retina {
-            background-color: #e5e5e5;
-            background-image: linear-gradient(to bottom,
-                    #fff5f6 50%,
-                    #e5e5e5),
-                url(/src/images/gallery-tablet-2x.png);
-
-        }
     }
 
     @include desktop {
-        max-width: 1013px;
+        width: 1013px;
         height: 430px;
-
-
-        background-color: #e5e5e5;
-        background-image: linear-gradient(to bottom,
-                #fff5f6 20%,
-                #ffffff),
-            url(/src/images/gallery-desktop.jpg);
-
-
-        @include retina {
-            background-color: #e5e5e5;
-            background-image: linear-gradient(to bottom,
-                    #fff5f6 20%,
-                    #ffffff),
-                url(/src/images/gallery-desktop-2x.jpg);
-        }
-
-
     }
-
-
 }
