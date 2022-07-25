@@ -1,5 +1,5 @@
 .container {
-  width: 100%;
+  max-width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -18,12 +18,34 @@
   }
 }
 
+.customer-reviews {
+  padding-bottom: 60px;
+  padding-top: 60px;
+  height: 500px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.slider {
+}
+
+.swiper-slide::after {
+  content: '';
+  background-image: url(/src/images/marks.svg);
+  width: 54px;
+  height: 40px;
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 120px;
+  left: 54px;
+  z-index: 1;
+}
+
 .slider .swiper-pagination {
-  bottom: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: -50px;
+  margin-bottom: -10px;
 }
 
 .slider .swiper-pagination-bullet {
@@ -39,6 +61,9 @@
 }
 
 .review__title {
+  z-index: 2;
+  max-width: 100%;
+  padding: 43px 58px 26px 65px;
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 500;
@@ -47,38 +72,29 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  height: 150px;
   background: repeating-linear-gradient(
-    white,
-    white 30px,
-    #e1e1e1 32px,
-    #e1e1e1 20px
+    white 15%,
+    white 29%,
+    #e1e1e1 31%,
+    #e1e1e1 25%
   );
-  background-image: url(/src/images/marks.svg);
-  background-repeat: no-repeat;
 }
-
-// .review__title::after {
-//   background-image: url(/src/images/about-bg-desktop-2x.png);
-//   fill: pink;
-//   width: 50px;
-//   height: 50px;
-//   border: 0;
-//   display: block;
-//   padding: 0;
-//   position: absolute;
-// }
 
 .review__picture {
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 32px;
 }
 
 .review__name {
   text-align: center;
+  margin-top: 50px;
 }
 
-.review__name::after {
-  background-image: url(/src/images/symbol-defs.svg#icon-house);
+.review__name::before {
+  content: '';
+  background-image: url(/src/images/group_marks.svg);
+  width: 32px;
+  height: 4px;
+  background-color: inherit;
+  position: absolute;
 }
