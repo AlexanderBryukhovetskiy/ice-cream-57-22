@@ -1,0 +1,64 @@
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-top: 0;
+
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
+}
+
+.review__title {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 255%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  height: 150px;
+  background: repeating-linear-gradient(
+    white,
+    white 30px,
+    #e1e1e1 32px,
+    #e1e1e1 20px
+  );
+  background-image: url(/src/images/marks.svg);
+  background-repeat: no-repeat;
+}
+
+// .review__title::after {
+//   background-image: url(/src/images/about-bg-desktop-2x.png);
+//   fill: pink;
+//   width: 50px;
+//   height: 50px;
+//   border: 0;
+//   display: block;
+//   padding: 0;
+//   position: absolute;
+// }
+
+.review__picture {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 32px;
+}
+
+.review__name {
+  text-align: center;
+}
+
+.review__name::after {
+  background-image: url(/src/images/symbol-defs.svg#icon-house);
+}
