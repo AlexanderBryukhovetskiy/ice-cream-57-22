@@ -1,15 +1,17 @@
 .footer-section {
     background-color: #fff;
-    padding-top: 40px;
-}
-/**
+    }
+
 .container--footer {
     @include tablet {
+        display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 40px;
     }
 }
-**/
+
 .footer-titles-list {
     display: flex;
     flex-direction: column;
@@ -21,11 +23,12 @@
 
     @include tablet {
         width: 340px;
+        margin-bottom: 0;
         row-gap: 12px;
     }
 
     @include desktop {
-        width: 474px;
+        width: 480px;
         row-gap: 16px;
     }
 }
@@ -80,6 +83,10 @@
     row-gap: 40px;
     align-items: flex-end;
     margin-bottom: 40px;
+
+    @include tablet{
+        margin-bottom: 19px;
+    }
    
 }
 
@@ -138,8 +145,15 @@
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
-    color: $first-text-color;
     line-height: calc(22/12);
+    color: $first-text-color;
+
+    @include tablet {
+        font-size: 14px;
+        line-height: calc(26/14);
+    }
+
+
 }
 
 .footer-tel-color {
@@ -151,7 +165,7 @@
     margin-left: auto;
     margin-right: auto;
     padding: 16px 94px 3px;
-    
+    max-width: 1200px;    
     font-family: DM Sans;
     font-style: normal;
     font-weight: 700;
@@ -162,4 +176,9 @@
     color: $second-text-color;
 
     border-top: 1px solid #d9d9d9;
+
+    @include tablet {
+        line-height: calc(26/14); 
+        padding: 8px 0px;
+    }
 }
