@@ -1,5 +1,6 @@
 .footer-section {
     background-color: #fff;
+    padding-top: 40px;
 }
 
 .footer-titles-list {
@@ -36,6 +37,7 @@
 
 .footer-contacts {
     display:flex;
+    flex-direction: column;
     flex-wrap: wrap;
     row-gap: 40px;
     align-items: flex-end;
