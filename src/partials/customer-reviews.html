@@ -1,7 +1,10 @@
 <section class="customer-reviews">
-  <div class="review__container container">
-    <div class="slider single-item">
-      <div class="review__slider">
+  <!-- Slider main container -->
+  <div class="slider swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
         <img
           src="/src/images/customer-1-mobile.png"
           alt="review1"
@@ -11,10 +14,8 @@
           Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
           Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
           ipsum primis in nibh vel risus.
-        </h2>
-      </div>
-      <div class="review__slider">
-        <img
+        </h2></div>
+      <div class="swiper-slide"><img
           src="/src/images/customer-2-desktop.png"
           alt="review1"
           class="review__picture"
@@ -23,11 +24,9 @@
           Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
           Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
           ipsum primis in nibh vel risus.
-        </h2>
-      </div>
-      <div class="review__slider">
-        <img
-          src="/src/images/customer-3-desktop.png"
+        </h2></div>
+      <div class="swiper-slide"><img
+          src="/src/images/customer-2-desktop.png"
           alt="review1"
           class="review__picture"
         />
@@ -35,8 +34,12 @@
           Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
           Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
           ipsum primis in nibh vel risus.
-        </h2>
-      </div>
+        </h2></div>
+      ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
     </div>
     <p class="review__name">Emily, Los Angeles</p>
   </div>
