@@ -24,6 +24,9 @@ textarea {
  background-color: #FFB8CA;
  padding-left: 15px;
  padding-right: 15px;
+ @media screen and (max-width: 320px) {
+  min-height: 0;
+ }
 }
 .page-header__nav {
  width: 100%;
@@ -32,9 +35,21 @@ textarea {
  justify-content: center;
  background-color: #FFB8CA;
  margin-top: 37px;
+ @media screen and (max-width: 768px) {
+  margin-top: 32px;
+ }
+ @media screen and (max-width: 320px) {
+  margin-top: 8px;
+}
 }
 .logo-group {
     margin-right: 128px;
+    @media screen and (max-width: 768px) {
+      margin-right: 293px;
+    }
+    @media screen and (max-width: 320px) {
+      margin-right: 61px;
+    }
 }
 .logo {
     fill: #D41443;
@@ -53,6 +68,17 @@ textarea {
 .site-nav-list {
  display: flex;
  align-items: center;
+ @media screen and (max-width: 768px) {
+  display: block;
+  padding: 0;
+  margin: 0 auto;
+  .site-nav-list__item {
+    max-width: 254px;
+    height: 42px;
+    margin-bottom: 23px;
+  }
+  
+ }
 }
 .site-nav-list :last-child {
  margin-right: 0;
@@ -81,13 +107,34 @@ textarea {
  height: 44px;
  color: #D41443;
  border-radius: 22px; 
+ @media screen and (max-width: 768px) {
+  margin-bottom: 20px;
+ }
+  &:hover {
+    background-color: #ECEBEB;
+  }
 }
-.btn:hover {
- background-color: #ECEBEB;
-}
+.btn-tablet {
+  opacity: 0;
+  @media screen and (max-width: 768px) {
+    background-color: $backgraund-about-color;
+    width: 159px;
+    height: 44px;
+    color: #D41443;
+    border-radius: 22px; 
+    opacity: 1;
+    margin-left: 32px;
+  }
+  @media screen and (max-width: 320px) {
+    display: none;
+  }
 
+}
 .burger {
     background-color: #FFB8CA;
+}
+.close {
+  fill: $backgraund-about-color;
 }
 
 /* Mobill-Tablet */
@@ -100,17 +147,13 @@ textarea {
    padding: 0;
    border: none;
    cursor: pointer;
-   & .icon-cross {
+   & .icon-cross, .cross-nav {
      display: none;
-
-     &:hover .site-nav-list__link,
-     &:focus .site-nav-list__link {
-       color: #ECEBEB;
-     }
    }
 
    &.is-open .icon-cross {
      display: block;
+     margin-right: 55px;
    }
 
    &.is-open .icon-menu {
@@ -122,36 +165,35 @@ textarea {
 .mobile-menu-thumb {
  display: flex;
  justify-content: space-between;
+ flex-direction: row-reverse;
 
  @media screen and (max-width: 768px) {
-   display: none;
    opacity: 0;
    visibility: hidden;
    pointer-events: none;
-
    position: absolute;
    top: 0;
-   left: 0;
+   transition: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+   transform: translateX(-200%);
    &.is-open {
      display: flex;
+     justify-content: flex-start;
      position: fixed;
      opacity: 1;
      visibility: visible;
      pointer-events: fill;
-     width: 100%;
-     height: 100vh;
-
-     overflow-y: scroll;
-
+     width: 254px;
+     height: 1020px;
      padding: 48px 40px;
      margin-left: auto;
      margin-right: auto;
      z-index: 900;
-
      flex-direction: column;
      font-weight: 500;
      letter-spacing: 0.02em;
-     background-color: #D41443;
+     background-color: $model-color;
+     transition: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+     transform: translateX(-100%);
    }
  }
 
@@ -160,18 +202,41 @@ textarea {
    flex-grow: 1;
    align-items: center;
  }
+ @media screen and (max-width: 320px) {
+  transition: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateX(-20%);
+  &.is-open {
+    display: flex;
+    justify-content: flex-start;
+    position: fixed;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: fill;
+    width: 250px;
+    height: 502px;
+    padding: 48px 40px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 900;
+    flex-direction: column;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    background-color: $model-color;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateX(10%);
+  }
+ }
 }
 
 /* MODAL */
 
 .backdrop {
  position: fixed;
- width: 100%;
+ width: 45%;
  height: 1024px;
  left: 50%;
  top: 50%;
  transform: translate(-50%, -50%);
- background: #D41443;
  z-index: 1;
  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -186,15 +251,21 @@ textarea {
  left: 50%;
  top: 50%;
  transform: translate(-50%, -50%);
- background-color: #FFFFFF;
+ background-color: $backgraund-about-color;
+ border-radius: 15px;
+ border:#D41443 1mm solid;
 }
 .elipse-cross {
  width: 30px;
  height: 30px;
  margin-top: 8px;
- margin-left: 490px;
+ margin-left: 4px;
  margin-right: 8px;
- background: #ECEBEB;
+ background: $model-color;
+ border-radius: 50px;
+ &:hover {
+  background: $primary-text-color;
+ }
 }
 .cross {
  fill: #D41443;
@@ -224,10 +295,10 @@ textarea {
 }
 .name__modal {
  margin-bottom: 4px;
- color: #FFB8CA;
+ color: $hero-elipce-color;
 }
 .modal-name {
- padding-left: 42px;
+ padding-left: 15px;
  height: 40px;
  width: 448px;
 }
@@ -268,7 +339,10 @@ textarea {
  width: 200px;
  height: 50px;
  border-radius: 15px;
- background: #D41443;
+ background-color: $hero-elipce-color;
  margin-top: 30px;
- color: #FFFFFF;
+ color: $backgraund-about-color;
+ &:hover {
+  background-color: $model-color;
+ }
 }
