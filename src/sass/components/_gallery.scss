@@ -10,21 +10,15 @@
     background-position: center;
 
     background-color: #e5e5e5;
-    background-image: linear-gradient(to bottom,
-            #fff5f6 20%,
-            #ffffff);
+    background-image: linear-gradient(to bottom, #fff5f6 20%, #ffffff);
 
     @include tablet {
-        background-image: linear-gradient(to bottom,
-                #fff5f6 50%,
-                #ffffff);
+        background-image: linear-gradient(to bottom, #fff5f6 50%, #ffffff);
     }
 
     @include desktop {
         padding: 120px 94px;
-        background-image: linear-gradient(to bottom,
-                #fff5f6 20%,
-                #ffffff);
+        background-image: linear-gradient(to bottom, #fff5f6 20%, #ffffff);
     }
 }
 
