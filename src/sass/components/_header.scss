@@ -66,29 +66,31 @@ textarea {
  margin-right: 128px;
 }
 .site-nav-list {
+  margin-right: 35px;
+}
+.site-nav-list {
  display: flex;
  align-items: center;
+ padding: 0;
  @media screen and (max-width: 768px) {
   display: block;
   padding: 0;
-  margin: 0 auto;
+  margin: 0;
+  width: 254px;
   .site-nav-list__item {
-    max-width: 254px;
+    border-top: 1px solid #E18298;
+    border-bottom: 1px solid #E18298;
+    padding-left: 20px;
+    padding-top: 12px;
     height: 42px;
-    margin-bottom: 23px;
   }
-  
  }
 }
-.site-nav-list :last-child {
- margin-right: 0;
+.site-nav-list__item {
+  margin-right: 34px;
 }
 .site-nav-list__link-link {
- margin-right: 35px;
  color: #D41443;
-}
-.site-nav-list__item {
- margin-right: 35px;
 }
 .site-nav-list__link {
  font-family: 'DM Sans';
@@ -98,7 +100,6 @@ textarea {
  line-height: 21px;
  align-items: center;
  color: #ffffff;
- margin-right: 35px;
  margin-top: 52px;
 }
 .btn {
@@ -115,8 +116,10 @@ textarea {
   }
 }
 .btn-tablet {
+  display: none;
   opacity: 0;
   @media screen and (max-width: 768px) {
+    display: block;
     background-color: $backgraund-about-color;
     width: 159px;
     height: 44px;
@@ -184,7 +187,7 @@ textarea {
      pointer-events: fill;
      width: 254px;
      height: 1020px;
-     padding: 48px 40px;
+     padding-top: 52px;
      margin-left: auto;
      margin-right: auto;
      z-index: 900;
@@ -193,7 +196,7 @@ textarea {
      letter-spacing: 0.02em;
      background-color: $model-color;
      transition: 350ms cubic-bezier(0.4, 0, 0.2, 1);
-     transform: translateX(-100%);
+     transform: translateX(-102%);
    }
  }
 
@@ -207,6 +210,7 @@ textarea {
   transform: translateX(-20%);
   &.is-open {
     display: flex;
+    align-items: center;
     justify-content: flex-start;
     position: fixed;
     opacity: 1;
@@ -214,7 +218,7 @@ textarea {
     pointer-events: fill;
     width: 250px;
     height: 502px;
-    padding: 48px 40px;
+    // padding: 48px 40px;
     margin-left: auto;
     margin-right: auto;
     z-index: 900;
@@ -259,7 +263,7 @@ textarea {
  width: 30px;
  height: 30px;
  margin-top: 8px;
- margin-left: 4px;
+ margin-left: 480px;
  margin-right: 8px;
  background: $model-color;
  border-radius: 50px;
