@@ -85,13 +85,11 @@
     }
   }
   &-item {
-    width: 280px;
+    min-width: 280px;
 
     @media screen and (min-width: 768px) {
-      margin-left: 32px;
+      padding-left: 32px;
       width: 334px;
-      //display: none;
-      //background-color: rebeccapurple;
     }
     @media screen and (min-width: 1200px) {
       width: 501px;
@@ -115,11 +113,13 @@
     }
   }
   &-milc{
-    background-image: none;
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position: 0px 236px;
     @media screen and (min-width: 1200px) {
       background-image:
         url(../images/about-bg-desktop.png);
-      background-size: cover;
+
       @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx){
@@ -140,10 +140,14 @@
     @media screen and (min-width: 768px) {
       width: 334px;
       font-size: 14px;
+      line-height: 176%;
+      letter-spacing: 0.04em;
     }
     @media screen and (min-width: 1200px) {
       width: 463px;
       font-size: 16px;
+      line-height: 194%;
+      letter-spacing: 0.04em;
     }
   }
   &-taitle{
@@ -159,11 +163,14 @@
     @media screen and (min-width: 768px) {
       width: 334px;
       font-size: 14px;
+      line-height: 176%;
+      letter-spacing: 0.04em;
       padding-bottom: 40px;
     }
     @media screen and (min-width: 1200px) {
       width: 463px;
-
+      line-height: 194%;
+      letter-spacing: 0.04em;
     }
   }
   &-taitle-span{
