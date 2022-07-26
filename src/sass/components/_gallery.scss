@@ -17,12 +17,15 @@
     }
 
     @include desktop {
-        padding: 120px 94px;
+        padding: 0 94px;
         background-image: linear-gradient(to bottom, #fff5f6 20%, #ffffff);
     }
 }
 
 .gallery__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 0;
 }
 
