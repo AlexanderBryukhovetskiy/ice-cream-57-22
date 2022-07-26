@@ -72,6 +72,7 @@ textarea {
  display: flex;
  align-items: center;
  padding: 0;
+ margin-right: 141px;
  @media screen and (max-width: 768px) {
   display: block;
   padding: 0;
@@ -100,6 +101,12 @@ textarea {
  align-items: center;
  color: #ffffff;
  margin-top: 52px;
+ @media screen and (max-width: 768px) {
+  font-size: 14px;
+  @media screen and (max-width: 320px) {
+    font-size: 14px;
+   }
+ }
 }
 .btn {
  background-color: #FFFFFF;
