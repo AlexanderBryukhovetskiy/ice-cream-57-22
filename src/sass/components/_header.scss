@@ -22,19 +22,16 @@ textarea {
  display: flex;
  min-height: 84px;
  background-color: #FFB8CA;
- padding-left: 15px;
- padding-right: 15px;
  @media screen and (max-width: 320px) {
   min-height: 0;
  }
 }
 .page-header__nav {
- width: 100%;
  display: flex;
  align-items: center;
- justify-content: center;
- background-color: #FFB8CA;
+ justify-content: space-between;
  margin-top: 37px;
+ position: absolute;
  @media screen and (max-width: 768px) {
   margin-top: 32px;
  }
@@ -65,7 +62,10 @@ textarea {
  color: #D41443;
  margin-right: 128px;
 }
-.site-nav-list {
+.site-nav-list :last-child{
+  margin-right: 0;
+}
+.site-nav-list__item {
   margin-right: 35px;
 }
 .site-nav-list {
@@ -86,9 +86,7 @@ textarea {
   }
  }
 }
-.site-nav-list__item {
-  margin-right: 34px;
-}
+
 .site-nav-list__link-link {
  color: #D41443;
 }
@@ -196,11 +194,11 @@ textarea {
      letter-spacing: 0.02em;
      background-color: $model-color;
      transition: 350ms cubic-bezier(0.4, 0, 0.2, 1);
-     transform: translateX(-102%);
+     transform: translateX(-6%);
    }
  }
 
- @media screen and (min-width: 768px) {
+ @media screen and (max-width: 768px) {
    justify-content: space-between;
    flex-grow: 1;
    align-items: center;
@@ -218,7 +216,6 @@ textarea {
     pointer-events: fill;
     width: 250px;
     height: 502px;
-    // padding: 48px 40px;
     margin-left: auto;
     margin-right: auto;
     z-index: 900;
