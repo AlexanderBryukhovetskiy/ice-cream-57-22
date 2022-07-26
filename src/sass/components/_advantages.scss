@@ -36,9 +36,6 @@
       text-decoration: none;
       width: 280px;
       margin: 0 auto;
-      @media screen and (max-width: 767px) {
-       padding-bottom: 55px;
-      }
       @media screen and (min-width: 768px) {
         display: flex;
         margin: 0;
@@ -58,7 +55,7 @@
 
     &_imet-left {
       @media screen and (min-width: 768px) {
-        width: 180px;
+        width: 162px;
         margin-right: 22px;
       }
       @media screen and (min-width: 1200px) {
@@ -117,20 +114,30 @@
       @media screen and (min-width: 768px) {
         width: 180px;
         font-size: 14px;
-        padding-bottom: 251px;
+        line-height: 174%;
       }
       @media screen and (min-width: 1200px) {
         width: 288px;
         font-size: 16px;
         line-height: 176%;
         letter-spacing: 0.02em;
-        padding-bottom: 209px;
       }
     }
 
     &_text-width {
+      @media screen and (min-width: 768px) {
+        width: 162px;
+      }
       @media screen and (min-width: 1200px) {
         width: 317px;
+      }
+    }
+    &_left-width{
+      @media screen and (min-width: 768px) {
+        width: 159px;
+      }
+      @media screen and (min-width: 1200px) {
+        width: 288px;
       }
     }
   }
