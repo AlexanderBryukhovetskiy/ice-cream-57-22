@@ -1,91 +1,71 @@
-<section class='header'>
-<!--<header class="page-header">-->
-<!--  <div class="page-header__container container">-->
-<!--    <nav class="page-header__nav">-->
-<!--      <svg width="49.71px" height="47.71px" aria-label="logo" class="logo">-->
-<!--      </svg>-->
-<!--      <a href="./index.html" class="page-header__logo" lang="en"> Icecream </a>-->
-<!--      <button-->
-<!--        type="button"-->
-<!--        class="menu-btn"-->
-<!--        aria-expanded="false"-->
-<!--        aria-controls="mobile_menu_thumb"-->
+<header class="page-header__container">
+    <div class="container">
+      <nav class="page-header__nav">
+        <a href="./index.html" lang="en"></a>
+        <svg width="199px" height="50px" aria-label="logo" class="logo-group">
+            <use class="logo" href="./images/symbol-defs.svg#logo-group"></use>
+        </svg>
+        </a>
+        <button type="button" class="menu-btn" aria-expanded="false" aria-controls="mobile_menu_thumb" data-menu-button="">
+        <svg width="20px" height="12px" aria-label="Переключатель мобільного меню" class="burger">
+          <use class="icon-menu" href="./images/symbol-defs.svg#Burger"></use>
+        </svg>
+      </button>
+      <button type="button" class="menu-btn" aria-expanded="false" aria-controls="mobile_menu_thumb" data-menu-button="">
+        <svg width="14px" height="14px" aria-label="Переключатель мобільного меню" class="cross-nav">
+          <use class="icon-cross" href="./images/symbol-defs.svg#close"></use>
+        </svg>
+      </button>
+        <div class="mobile-menu-thumb" id="mobile_menu_thumb" data-menu="">
+          <button data-modal-open="" class="btn" type="button">Buy now</button>
+          <ul class="site-nav-list">
+            <li class="site-nav-list__item">
+              <a class="site-nav-list__link-link" href="">Home</a>
+            </li>
+            <li class="site-nav-list__item">
+              <a class="site-nav-list__link" href="">About us</a>
+            </li>
+            <li class="site-nav-list__item">
+              <a class="site-nav-list__link" href="">How it’s made?</a>
+            </li>
+            <li class="site-nav-list__item">
+              <a class="site-nav-list__link" href="">Our products</a>
+            </li>
+            <li class="site-nav-list__item">
+              <a class="site-nav-list__link" href="">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <button data-modal-open="backdrop" class="btn-tablet" type="button">Buy now</button>
+        <div class="backdrop is-hidden" data-modal="backdrop">
+          <div class="modal">
+              <button data-modal-close="" class="elipse-cross">                    
+                  <svg class="cross">
+                    <use class="icon-cross" href="./images/symbol-defs.svg#close"></use>
+                </svg></button>
+          <form class="form__modal" autocomplete="on">
+              <h2 class="modal__title">Place your order</h2>
+              <div class="modal__name">
+                  <label for="name" class="name__modal">Name</label>
+                  <input type="text" name="name" id="name" class="modal-name">
+              </div>
+              <div class="modal__tel">
+                  <label for="tel" class="name__modal">Phone</label>
+                  <input type="tel" name="tel" id="tel" class="modal-name">
+              </div>
+              <div class="modal__mail">
+                  <label for="mail" class="name__modal">E-mail</label>
+                  <input type="mail" name="mail" id="mail" class="modal-name">
+              </div>
+              <div class="modal__comment">
+                  <label for="comment" class="name__modal">Comment</label>
+                  <textarea name="comment" id="comment" placeholder="Texting..." class="modal-comment"></textarea>
+              </div>
+              <button type="submit" class="submit">Send</button>
+          </form>
+      </div>
+          </div>
+          </nav>
+    </div>
+  </header>
 
-<!--      >-->
-<!--        <svg width="40px" height="40px" aria-label="Переключатель мобільного меню">-->
-<!--          <use class="icon-cross" href="./images/icons.svg#icon-close_menu"></use>-->
-<!--          <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>-->
-<!--        </svg>-->
-<!--      </button>-->
-<!--      <div class="mobile-menu-thumb" id="mobile_menu_thumb" data-menu>-->
-<!--        <ul class="site-nav-list">-->
-<!--          <li class="site-nav-list__item">-->
-<!--            <a class="site-nav-list__link-link" href="./about.html">Home</a>-->
-<!--          </li>-->
-<!--          <li class="site-nav-list__item">-->
-<!--            <a class="site-nav-list__link" href="./about.html">About us</a>-->
-<!--          </li>-->
-<!--          <li class="site-nav-list__item">-->
-<!--            <a class="site-nav-list__link" href="./about.html">How it’s made?</a>-->
-<!--          </li>-->
-<!--          <li class="site-nav-list__item">-->
-<!--            <a class="site-nav-list__link" href="./about.html">Our products</a>-->
-<!--          </li>-->
-<!--          <li class="site-nav-list__item">-->
-<!--            <a class="site-nav-list__link" href="./about.html">Contact</a>-->
-<!--          </li>-->
-<!--        </ul>-->
-<!--        <button-->
-<!--          type="button"-->
-<!--          class="menu-btn"-->
-<!--          aria-expanded="false"-->
-<!--          aria-controls="mobile_menu_thumb"-->
-<!--          data-menu-button>-->
-<!--          <svg width="20px" height="12px" aria-label="переключатель мобільного меню">-->
-<!--            <use class="icon-cross" href=""></use>-->
-<!--            <use class="icon-menu" href=""></use>-->
-<!--          </svg>-->
-<!--        </button>-->
-<!--        <button data-modal-open class="btn" type="button">Buy now</button>-->
-<!--        <div class="backdrop is-hidden" data-modal>-->
-<!--          <div class="modal">-->
-<!--            <button data-modal-close="" class="elipse-cross">-->
-<!--              <svg class="cross">-->
-<!--                <use href=""></use></svg>-->
-<!--            </button>-->
-<!--            <form class="form__modal" autocomplete="on">-->
-<!--              <h2 class="modal__title">Place your order</h2>-->
-<!--              <div class="modal__name">-->
-<!--                <label for="name" class="name__modal">Name</label>-->
-<!--                <input type="text" name="name" id="name" class="modal-name">-->
-<!--                <svg class="name-icon">-->
-<!--                  <use href=""></use>-->
-<!--                </svg>-->
-<!--              </div>-->
-<!--              <div class="modal__tel">-->
-<!--                <label for="tel" class="name__modal">Phone</label>-->
-<!--                <input type="tel" name="tel" id="tel" class="modal-name">-->
-<!--                <svg class="tel-icon">-->
-<!--                  <use href=""></use>-->
-<!--                </svg>-->
-<!--              </div>-->
-<!--              <div class="modal__mail">-->
-<!--                <label for="mail" class="name__modal">E-mail</label>-->
-<!--                <input type="mail" name="mail" id="mail" class="modal-name">-->
-<!--                <svg class="email-icon">-->
-<!--                  <use href=""></use>-->
-<!--                </svg>-->
-<!--              </div>-->
-<!--              <div class="modal__comment">-->
-<!--                <label for="comment" class="name__modal">Comment</label>-->
-<!--                <textarea name="comment" id="comment" placeholder="Texting..." class="modal-comment"></textarea>-->
-<!--              </div>-->
-<!--              <button type="submit" class="submit">Send</button>-->
-<!--            </form>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </nav>-->
-<!--  </div>-->
-<!--</header>-->
-</section>
