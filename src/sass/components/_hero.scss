@@ -1,58 +1,50 @@
+.hero-wrap{
+    background-color:$backgraund-color ;
+}
 .hero {
     display: flex;
+    position: relative;
     height: 502px;
     max-width: 1600px;
     background-color:$backgraund-color;
     background-repeat: no-repeat;
+    background-image:
+            url(/src/images/ellipse-pink-mobile.png);
+    background-size: 346px 344px;
+    background-position:
+            top 83px left 36px;
 
-            @media screen and (max-width: 767px) {
-                & {
-                    background-image:
-                         url(/src/images/slider-pic7-mobile.png),
-                          url(/src/images/ellipse-pink-mobile.png);
-                    background-position:
-                         top 92px left 117px,
-                         top 83px 36px;
+                    @media screen and (min-width: 390px) {
+                            & {
+                            background-position:
+                                    top 83px left 60%;
+                            }
+                        }
+           
                 
-                }
                  @media screen and (min-resolution: 2dppx) {
                    & {
                         background-image:
-                            url(/src/images/slider-pic7-mobile-2x.png),
                             url(/src/images/ellipse-pink-mobile-2x.png);
                             }
                      }
-            }
-
+            
     
         @media screen and (min-width: 768px) {
                 & {
+                    flex-direction: column;
                     height: 416px;
                     background-image:
-                            url(/src/images/slider-pic7-tablet.png),
-                            url(/src/images/slider-pic4-tablet.png),
-                            url(/src/images/slider-pic5-tablet.png),
-                            url(/src/images/ellipse-pink-tablet.png),
-                            url(/src/images/ellipse-white-tablet.png),
-                            url(/src/images/ellipse-white-tablet.png);
+                            url(/src/images/ellipse-pink-tablet.png);
+                            background-size: 335px 333px;
                         background-position:
-                            left 332px top 80px,
-                            left 546px  top 265px,
-                            left 32px top 246px,
                             left 248px top 43px,
-                            left 746px top 100px,
-                            left 746px top 160px;
                                
                 }
                       @media screen and (min-resolution: 2dppx) {
                              & {
                                  background-image:
-                                    url(/src/images/slider-pic7-table2x.png),
-                                    url(/src/images/slider-pic4-tablet-2x.png),
-                                    url(/src/images/slider-pic5-tablet-2x.png),
-                                    url(/src/images/ellipse-pink-tablet-2x.png),
-                                    url(/src/images/ellipse-white-tablet-2x.png),
-                                    url(/src/images/ellipse-white-tablet-2x.png);
+                                    url(/src/images/ellipse-pink-tablet-2x.png);
                                     }
                                 }
             }
@@ -61,30 +53,18 @@
                 & {
                     height: 664px;
                     background-image:
-                            url(/src/images/slider-pic7-desktop.png),
-                            url(/src/images/slider-pic4-desktop.png),
-                            url(/src/images/slider-pic5-desktop.png),
-                            url(/src/images/ellipse-pink-desktop.png),
-                            url(/src/images/ellipse-white-desktop.png),
-                            url(/src/images/ellipse-white-desktop.png);
+                            url(/src/images/ellipse-pink-desktop.png);
+                            background-size: 534px 534px;
+            
                         background-position:
-                            left 646px top 108px,
-                            left 880px top 423px,
-                            left 16px top 388px,
-                            left 517px top 54px,
-                            left 1168px top 140px,
-                            left 1168px top 228px;
+                            left 517px top 54px;
+                          
 
                 }
                  @media screen and (min-resolution: 2dppx) {
                              & {
                                  background-image:
-                                    url(/src/images/slider-pic7-desktop-2x.png),
-                                    url(/src/images/slider-pic4-desktop-2x.png),
-                                    url(/src/images/slider-pic5-desktop-2x.png),
-                                    url(/src/images/ellipse-pink-desktop-2x.png),
-                                    url(/src/images/ellipse-white-desktop-2x.png),
-                                    url(/src/images/ellipse-white-desktop-2x.png);
+                                    url(/src/images/ellipse-pink-desktop-2x.png);
                                     }
                                 }
             }
@@ -92,7 +72,7 @@
 
 .hero__position-1{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     margin-top: 194px;
    
     @media screen and (max-width:480px) {
@@ -109,12 +89,26 @@
                 margin-bottom: 108px;
             }
 }
-.hero__ice-cream {}
+.hero__ice-cream {
+    position: absolute;
+    z-index: 2;
+    left: 20px;
+    top: 194px;
+
+        @media screen and (min-width:768px) {
+                left: 32px;
+                top: 102px;
+            }
+        
+            @media screen and (min-width:1200px) {
+                left: 56px;
+                top: 147px;
+            }
+}
 
 .hero__titel {
     
         padding-bottom: 20px;
-
         font-family: 'Titan One';
         font-style: normal;
         font-weight: 400;
@@ -162,6 +156,11 @@
      margin-right: 8px;
      cursor: pointer;
 
+     text-decoration: none;
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+
         font-family: 'DM Sans';
         font-style: normal;
         font-weight: 400;
@@ -176,12 +175,7 @@
         border-style: hidden;
         color:$rectangel-backgraund-text-color;
 
-    @media screen and (min-width: 768px) {
-            & {
-               
-            }
-        }
-    
+       
         @media screen and (min-width:1200px) {
             & {
                 width: 107px;
@@ -199,6 +193,11 @@
     height: 24px;
     cursor: pointer;
     
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
@@ -249,10 +248,38 @@
         text-transform: uppercase;
         color: $title-text-color;
 
+        background-image: url(/src/images/ellipse-white-tablet.png);
+        background-size: 16px 16px;
+        background-repeat: no-repeat;
+        background-position: right top;
+        padding-right: 8px;
+        padding-top: 3px;
+
+        @media screen and (min-resolution: 2dppx) {
+                & {
+                    background-image:
+                    url(/src/images/ellipse-white-tablet-2x.png);
+                       
+            }
+        }
+
         @media screen and (min-width:1200px) {
                 font-size: 46px;
                 line-height: 1.15;
+                padding-right: 17px;
+                padding-top: 4px;
+                background-image: url(/src/images/ellipse-white-desktop.png);
+                background-size: 30px 30px;
+
+                @media screen and (min-resolution: 2dppx) {
+                        & {
+                            background-image:
+                                url(/src/images/ellipse-white-desktop-2x.png);
+                
+                        }
+                    }
             }
+
 }
 
 .cafe-list__item:not(:last-child){
@@ -286,11 +313,12 @@
     margin-left: 184px;
 
         @media screen and (min-width:1200px) {
-            margin-left: 269px;
+            margin-left: 229px;
         }
 }
 .hero__milk {
     display: none;
+    position: relative;
 
     @media screen and (min-width:768px) {
         width: 114px;
@@ -305,6 +333,7 @@
     }
 
 }
+
 
 .hero__milk-text {
     font-size: 8px;
@@ -336,4 +365,88 @@
         background-image: url(/src/images/arrow-desktop.png);
     }
 
+}
+
+    @keyframes ice-cream-animation {
+        from {
+            transform: translateY(-205%);
+        }
+
+        to {
+            transform: translateY(0%);
+        }
+    }
+.ice-cream-img{
+    position: absolute;
+        top: 92px;
+        left: 26%;
+        animation-duration: 3s;
+        animation-name: ice-cream-animation;
+
+        @media screen and (min-width:768px) {
+                left: 42%;
+                top: 80px;
+            }
+        
+    
+        @media screen and (min-width:1200px) {
+            left: 54%;
+            top: 108px;
+        }
+    }
+
+        @keyframes milk-animation {
+        from {
+        transform: translateX(-205%);
+        }
+
+        to {
+        transform: translateX(0%);
+        }
+    }
+
+.milk-img {
+    display: none;
+    position: absolute;
+    left: 32px;
+    top: 246px;
+    animation-duration: 4s;
+    animation-name: milk-animation;
+
+    @media screen and (min-width:768px) {
+        display: block;
+    }
+
+    @media screen and (min-width:1200px) {
+        left: 16px;
+        top: 388px;
+    }
+
+}
+         @keyframes girl-animation {
+             from {
+                 transform: translateY(205%);
+             }
+    
+             to {
+                 transform: translateY(0%);
+             }
+         }
+
+.girl-img{
+    overflow: hidden;
+    display: none;
+    position: absolute;
+       right: 32px;
+        top: 265px;
+        animation-duration: 4s;
+        animation-name: girl-animation;
+       
+        @media screen and (min-width:768px) {
+                display: block;
+            }
+        @media screen and (min-width:1200px) {
+                right: 16px;
+                top: 423px;
+            }
 }

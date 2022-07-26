@@ -1,12 +1,15 @@
-<section class="hero">
-    <div class="container">
-       <div class="hero__position-1">
+<section class="hero-wrap">
+    <div class="hero container">
+    
+               <div class="hero__position-1">
         <div class="hero__ice-cream">
             <h1 class="hero__titel"> ice cream <br>made with <br>
                 <span class="hero__titel-text">passion</span>
             </h1>
-            <button class="hero__btn-products">Products</button>
-            <button class="hero__btn-how">How it’s made?</button>
+            <a href="#products" class="hero__btn-products">Products</a>
+            <!-- <button class="hero__btn-products">Products</button> -->
+            <a href="#about" class="hero__btn-how">How it’s made?</a>
+            <!-- <button class="hero__btn-how">How it’s made?</button> -->
         </div>
         <div class="hero__cafe">
             <ul class="cafe-list list">
@@ -32,7 +35,45 @@
             </div>
         </div>
         
-       
+           <picture class="ice-cream-img">
+            <source srcset=
+                "/src/images/slider-pic7-mobile.png 1x,
+                /src/images/slider-pic7-mobile-2x.png 2x" 
+                media="(max-width: 767px)" />
+            <source srcset=
+                    "/src/images/slider-pic7-desktop.png 1x,
+                     /src/images/slider-pic7-desktop-2x.png 2x" 
+                     media="(min-width: 1200px)" />
+            <source srcset=
+                "/src/images/slider-pic7-tablet.png 1x,
+                /src/images/slider-pic7-table2x.png 2x" 
+                media="(min-width: 768px)" />
+            <img src="/src/images/slider-pic7-desktop.png" alt="мороженное">
+        </picture>
+        <picture class="milk-img">
+            <source 
+            srcset=
+                "/src/images/slider-pic5-tablet.png 1x,
+                /src/images/slider-pic5-tablet-2x.png 2x" 
+                media="(max-width: 1199px)"/>
+            <source srcset=
+                "/src/images/slider-pic5-desktop.png 1x,
+                 /src/images/slider-pic5-desktop-2x.png 2x"
+                  media="(min-width: 1200px)"/>
+            <img  src="/src/images/slider-pic5-desktop.png" alt="молоко">
+        </picture>
+        <picture class="girl-img">
+            <source srcset=
+                    "/src/images/slider-pic4-tablet.png 1x,
+                    /src/images/slider-pic4-tablet-2x.png 2x"
+                     media="(max-width: 1199px)" />
+            <source srcset=
+                    "/src/images/slider-pic4-desktop.png 1x,
+                    /src/images/slider-pic4-desktop-2x.png 2x" 
+                    media="(min-width: 1200px)" />
+
+            <img src="/src/images/slider-pic4-desktop.png" alt=" девушка ест мороженное">
+        </picture>
     </div>
     
 
