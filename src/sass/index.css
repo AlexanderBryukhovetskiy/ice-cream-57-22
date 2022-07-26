@@ -1,0 +1,555 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+* .list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 320px) {
+  .container {
+    width: 320px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+.hero {
+  display: flex;
+  height: 502px;
+  max-width: 1600px;
+  background-color: #FFB8CA;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 767px) {
+  .hero {
+    background-image: url(/src/images/slider-pic7-mobile.png), url(/src/images/ellipse-pink-mobile.png);
+    background-position: top 92px left 117px, top 83px 36px;
+  }
+}
+@media screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(/src/images/slider-pic7-mobile-2x.png), url(/src/images/ellipse-pink-mobile-2x.png);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    height: 416px;
+    background-image: url(/src/images/slider-pic7-tablet.png), url(/src/images/slider-pic4-tablet.png), url(/src/images/slider-pic5-tablet.png), url(/src/images/ellipse-pink-tablet.png), url(/src/images/ellipse-white-tablet.png), url(/src/images/ellipse-white-tablet.png);
+    background-position: left 332px top 80px, left 546px top 265px, left 32px top 246px, left 248px top 43px, left 746px top 100px, left 746px top 160px;
+  }
+}
+@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(/src/images/slider-pic7-table2x.png), url(/src/images/slider-pic4-tablet-2x.png), url(/src/images/slider-pic5-tablet-2x.png), url(/src/images/ellipse-pink-tablet-2x.png), url(/src/images/ellipse-white-tablet-2x.png), url(/src/images/ellipse-white-tablet-2x.png);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 664px;
+    background-image: url(/src/images/slider-pic7-desktop.png), url(/src/images/slider-pic4-desktop.png), url(/src/images/slider-pic5-desktop.png), url(/src/images/ellipse-pink-desktop.png), url(/src/images/ellipse-white-desktop.png), url(/src/images/ellipse-white-desktop.png);
+    background-position: left 646px top 108px, left 880px top 423px, left 16px top 388px, left 517px top 54px, left 1168px top 140px, left 1168px top 228px;
+  }
+}
+@media screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(/src/images/slider-pic7-desktop-2x.png), url(/src/images/slider-pic4-desktop-2x.png), url(/src/images/slider-pic5-desktop-2x.png), url(/src/images/ellipse-pink-desktop-2x.png), url(/src/images/ellipse-white-desktop-2x.png), url(/src/images/ellipse-white-desktop-2x.png);
+  }
+}
+
+.hero__position-1 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 194px;
+}
+@media screen and (max-width: 480px) {
+  .hero__position-1 {
+    margin-right: 144px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__position-1 {
+    margin-top: 102px;
+    margin-bottom: 61px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__position-1 {
+    margin-top: 147px;
+    margin-bottom: 108px;
+  }
+}
+
+.hero__titel {
+  padding-bottom: 20px;
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.16;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #FAFAFA;
+}
+@media screen and (min-width: 768px) {
+  .hero__titel {
+    font-size: 22px;
+    line-height: 1.14;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__titel {
+    padding-bottom: 24px;
+    font-size: 38px;
+  }
+}
+
+.hero__titel-text {
+  font-size: 45px;
+  color: #D41443;
+}
+@media screen and (min-width: 768px) {
+  .hero__titel-text {
+    font-size: 35px;
+    line-height: 1.14;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__titel-text {
+    font-size: 60px;
+    line-height: 1.16;
+  }
+}
+
+.hero__btn-products {
+  width: 63px;
+  height: 24px;
+  margin-right: 8px;
+  cursor: pointer;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+  align-items: center;
+  text-align: center;
+  background: #D41443;
+  border-radius: 20px;
+  border-style: hidden;
+  color: #FAFAFA;
+}
+@media screen and (min-width: 1200px) {
+  .hero__btn-products {
+    width: 107px;
+    height: 40px;
+    margin-right: 12px;
+    font-size: 14px;
+    line-height: 1.28;
+  }
+}
+
+.hero__btn-how {
+  width: 83px;
+  height: 24px;
+  cursor: pointer;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+  align-items: center;
+  text-align: center;
+  background: #FAFAFA;
+  border-radius: 20px;
+  border-style: hidden;
+  color: #D41443;
+}
+@media screen and (min-width: 1200px) {
+  .hero__btn-how {
+    width: 138px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 1.28;
+  }
+}
+
+.hero__cafe {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .hero__cafe {
+    display: block;
+  }
+}
+
+.cafe-list {
+  display: inline-grid;
+}
+
+.cafe-list__item {
+  display: inline-flex;
+  flex-direction: column;
+  font-family: "Titan One";
+  font-size: 28px;
+  line-height: 1.14;
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #D41443;
+}
+@media screen and (min-width: 1200px) {
+  .cafe-list__item {
+    font-size: 46px;
+    line-height: 1.15;
+  }
+}
+
+.cafe-list__item:not(:last-child) {
+  margin-bottom: 17px;
+}
+
+.cafe-list__item-text {
+  font-family: "DM Sans";
+  font-size: 8px;
+  line-height: 1.25;
+  text-align: right;
+  letter-spacing: normal;
+  text-transform: none;
+  color: #FFFFFF;
+}
+@media screen and (min-width: 1200px) {
+  .cafe-list__item-text {
+    font-size: 14px;
+    line-height: 1.28;
+  }
+}
+
+.hero__position-2 {
+  margin-left: 184px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__position-2 {
+    margin-left: 269px;
+  }
+}
+
+.hero__milk {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .hero__milk {
+    width: 114px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__milk {
+    width: 200px;
+  }
+}
+
+.hero__milk-text {
+  font-size: 8px;
+  line-height: 1.5;
+  margin-bottom: 7px;
+  color: #FAFAFA;
+}
+@media screen and (min-width: 1200px) {
+  .hero__milk-text {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+}
+
+.hero__btn-arrow-right {
+  width: 18px;
+  height: 18px;
+  border-radius: 50px;
+  background-size: contain;
+  border-style: hidden;
+  background-image: url(/src/images/arrow-tablet.png);
+}
+@media screen and (min-width: 1200px) {
+  .hero__btn-arrow-right {
+    width: 26px;
+    height: 26px;
+    background-image: url(/src/images/arrow-desktop.png);
+  }
+}
+
+.about {
+  background-color: #FFF5F6;
+  padding-top: 60px;
+  list-style: none;
+  text-decoration: none;
+}
+.about-hero {
+  padding-bottom: 15px;
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFA5BA;
+}
+@media screen and (min-width: 768px) {
+  .about-hero {
+    font-size: 26px;
+    line-height: 30px;
+  }
+}
+.about-question {
+  padding-bottom: 32px;
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 39px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #D41443;
+}
+@media screen and (min-width: 768px) {
+  .about-question {
+    font-size: 48px;
+    line-height: 55px;
+    letter-spacing: 0.04em;
+  }
+}
+
+.activity {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  text-decoration: none;
+}
+@media screen and (min-width: 768px) {
+  .activity {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+@media screen and (min-width: 768px) {
+  .activity-jpg {
+    margin-left: 32px;
+  }
+}
+.activity-item {
+  width: 280px;
+  height: 133 pxd;
+}
+@media screen and (max-width: 767px) {
+  .activity-item {
+    background-image: url(../images/about-bg-desktop.png);
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 768px) {
+  .activity-item {
+    margin-left: 32px;
+    width: 334px;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .activity-item {
+    background-image: url(../images/about-bg-mobile.png);
+  }
+}
+.activity-text {
+  padding-bottom: 40px;
+  width: 220px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 162%;
+  color: #000000;
+}
+.activity-taitle {
+  padding-bottom: 20px;
+  width: 220px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 162%;
+  color: #907E82;
+}
+.activity-taitle-span {
+  margin-top: 20px;
+}
+.activity-button {
+  margin-bottom: 40px;
+  width: 176px;
+  height: 44px;
+  color: #D41443;
+  background: #FFFFFF;
+  border-radius: 22px;
+  border-color: rgba(0, 0, 0, 0);
+}
+.activity-svg {
+  fill: #d41443;
+}
+
+.about-information {
+  display: flex;
+  justify-content: flex-start;
+}
+.about-information_section {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+.about-information_item {
+  fill: #FFA5BA;
+  padding-bottom: 16px;
+}
+.about-information_subject {
+  width: 98px;
+  height: 56px;
+  padding-bottom: 4px;
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 41px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #D41443;
+}
+.about-information_text {
+  padding-bottom: 32px;
+  width: 230px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 170%;
+  color: #000000;
+}
+
+.container {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 320px) {
+  .container {
+    width: 320px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+.gallery {
+  max-width: 320px;
+  height: 136px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #e5e5e5;
+  background-image: linear-gradient(to bottom, #fff5f6 20%, #e5e5e5), url(/src/images/gallery-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .gallery {
+    background-color: #e5e5e5;
+    background-image: linear-gradient(to bottom, #fff5f6 20%, #e5e5e5), url(/src/images/gallery-mobile-2x.png);
+  }
+}
+@media screen and (min-width: 768px) {
+  .gallery {
+    max-width: 768px;
+    height: 327px;
+    background-color: #e5e5e5;
+    background-image: linear-gradient(to bottom, #fff5f6 50%, #e5e5e5), url(/src/images/gallery-tablet.png);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .gallery {
+    background-color: #e5e5e5;
+    background-image: linear-gradient(to bottom, #fff5f6 50%, #e5e5e5), url(/src/images/gallery-tablet-2x.png);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery {
+    max-width: 1013px;
+    height: 430px;
+    background-color: #e5e5e5;
+    background-image: linear-gradient(to bottom, #fff5f6 20%, #ffffff), url(/src/images/gallery-desktop.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .gallery {
+    background-color: #e5e5e5;
+    background-image: linear-gradient(to bottom, #fff5f6 20%, #ffffff), url(/src/images/gallery-desktop-2x.jpg);
+  }
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,26 @@
+<!-- Gallery -->
+
+<section class="gallery">
+  <div class="gallery__container">
+    <h2 class="visually-hidden">Gallery</h2>
+    <picture>
+      <source media="(min-width: 1200px )" srcset="
+          /src/images/Gallery-desktop.png    1x,
+          /src/images/Gallery-desktop-2x.png 2x
+        " />
+
+      <source media="(min-width: 768px )" srcset="
+          /src/images/Gallery-tablet-2x.png 1x,
+          /src/images/Gallery-tablet.png    2x
+        " />
+
+      <source media="(max-width: 767px )" srcset="
+          /src/images/Gallery-mobile.png    1x,
+          /src/images/Gallery-mobile-2x.png 2x
+        " />
+
+      <img class="gallery__img" src="/src/images/Gallery-desktop.png" alt="ice cream photo set" width="1013"
+        height="430" />
+    </picture>
+  </div>
+</section>
