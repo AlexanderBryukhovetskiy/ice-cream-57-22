@@ -1,4 +1,5 @@
 .footer-section {
+    
     background-color: #fff;
     }
 
@@ -87,7 +88,10 @@
     @include tablet{
         margin-bottom: 19px;
     }
-   
+
+    @include desktop {
+        margin-bottom: 0;
+    } 
 }
 
 .footer-social-icon-list {
@@ -109,7 +113,6 @@
         height: 34px;
     }
 }
-
 
 .social-link-footer {
     display: flex;
@@ -152,8 +155,6 @@
         font-size: 14px;
         line-height: calc(26/14);
     }
-
-
 }
 
 .footer-tel-color {
@@ -178,7 +179,12 @@
     border-top: 1px solid #d9d9d9;
 
     @include tablet {
-        line-height: calc(26/14); 
         padding: 8px 0px;
+        line-height: calc(26/14); 
+        letter-spacing: 0.02em;
+    }
+
+    @include desktop {
+        padding:  7px 0px;
     }
 }
