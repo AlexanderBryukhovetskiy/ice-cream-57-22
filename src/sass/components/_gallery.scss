@@ -1,8 +1,6 @@
 .gallery {
-
     padding-top: 60px;
     padding-bottom: 60px;
-
 
     margin-left: auto;
     margin-right: auto;
@@ -13,31 +11,32 @@
 
     background-color: #e5e5e5;
     background-image: linear-gradient(to bottom,
-            rgba(255, 245, 246, 1),
-            rgba(250, 250, 250, 1));
+            #fff5f6 20%,
+            #ffffff);
+
+    @include tablet {
+        background-image: linear-gradient(to bottom,
+                #fff5f6 50%,
+                #ffffff);
+    }
 
     @include desktop {
         padding: 120px 94px;
-
+        background-image: linear-gradient(to bottom,
+                #fff5f6 20%,
+                #ffffff);
     }
-
-
 }
 
 .gallery__container {
     padding: 0;
-
 }
 
-
 .gallery__img {
-
-
     @media screen-320-479px {
         width: 320px;
         height: 136px;
     }
-
 
     @include tablet {
         width: 768px;
