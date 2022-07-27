@@ -1,3 +1,4 @@
+
 const { Pagination } = require('swiper');
 
 new Swiper('.customer-reviews__slider', {
