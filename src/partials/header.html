@@ -1,22 +1,24 @@
 <header class="page-header__container">
     <div class="container">
-      <nav class="page-header__nav">
+      <div class="page-header__nav">
+        <div class="logo-group">
         <a href="./index.html" lang="en"></a>
-        <svg width="199px" height="50px" aria-label="logo" class="logo-group">
+        <svg width="199px" height="50px" aria-label="logo">
             <use class="logo" href="./images/symbol-defs.svg#logo-group"></use>
         </svg>
         </a>
-        <button type="button" class="menu-btn" aria-expanded="false" aria-controls="mobile_menu_thumb" data-menu-button="">
-        <svg width="20px" height="12px" aria-label="Переключатель мобільного меню" class="burger">
-          <use class="icon-menu" href="./images/symbol-defs.svg#Burger"></use>
-        </svg>
-      </button>
+      </div>
+        <button type="button" class="menu-btn" aria-expanded="false" aria-controls="mobile_menu_thumb" data-menu-button>
+          <svg width="20px" height="12px" aria-label="Переключатель мобільного меню" class="burger">
+            <use class="icon-cross" href="./images/symbol-defs.svg#close"></use>
+            <use class="icon-menu" href="./images/symbol-defs.svg#Burger"></use>
+          </svg>
+        </button>
         <div class="mobile-menu-thumb" id="mobile_menu_thumb" data-menu="">
-          <button id="hider" class="elipse-cross-modal">               
-            <svg class="cross-modal">
-              <use class="icon-cross-modal" href="./images/symbol-defs.svg#close"></use>
-          </svg></button>
+          <div class="btn__block">
           <button data-modal-open="" class="btn" type="button">Buy now</button>
+          </div>
+          <nav>
           <ul class="site-nav-list">
             <li class="site-nav-list__item">
               <a class="site-nav-list__link-link" href="">Home</a>
@@ -34,6 +36,7 @@
               <a class="site-nav-list__link" href="">Contact</a>
             </li>
           </ul>
+        </nav>
         </div>
         <button data-modal-open="backdrop" class="btn-tablet" type="button">Buy now</button>
         <div class="backdrop is-hidden" data-modal="backdrop">
@@ -64,7 +67,7 @@
           </form>
       </div>
           </div>
-          </nav>
+        </div>
     </div>
   </header>
 
