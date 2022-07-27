@@ -1,5 +1,5 @@
 .gallery {
-    padding-top: 0;
+    padding-top: 60px;
     padding-bottom: 60px;
 
     margin-left: auto;
@@ -10,15 +10,21 @@
     background-position: center;
 
     background-color: #e5e5e5;
-    background-image: linear-gradient(to bottom, #fff5f6 20%, #ffffff);
+    background-image: linear-gradient(to bottom,
+            #fff5f6 35%,
+            #ffffff 35%);
 
     @include tablet {
-        background-image: linear-gradient(to bottom, #fff5f6 50%, #ffffff);
+        background-image: linear-gradient(to bottom,
+                #fff5f6 55%,
+                #ffffff 55%);
     }
 
     @include desktop {
-        padding: 0 94px;
-        background-image: linear-gradient(to bottom, #fff5f6 20%, #ffffff);
+        padding: 120px 94px;
+        background-image: linear-gradient(to bottom,
+                #fff5f6 31%,
+                #ffffff 31%);
     }
 }
 
