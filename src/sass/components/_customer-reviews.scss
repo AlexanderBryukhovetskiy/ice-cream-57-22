@@ -29,7 +29,7 @@
 
   &::after {
     content: '';
-    background-image: url(/src/images/marks.svg);
+    background-image: url(/src/images/decor-marks.svg);
     width: 54px;
     height: 40px;
     position: absolute;
@@ -133,7 +133,7 @@
 
   &::before {
     content: '';
-    background-image: url(/src/images/group_marks.svg);
+    background-image: url(/src/images/group-dots.svg);
     width: 32px;
     height: 4px;
     background-color: inherit;
