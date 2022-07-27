@@ -1,7 +1,6 @@
 
 .customer-reviews__container {
   max-width: 100%;
-
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0;
@@ -18,6 +17,39 @@
 
     padding-left: 16px;
     padding-right: 16px;
+  }
+}
+
+
+.customer-reviews {
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide::after {
+  content: '';
+  background-image: url(/src/images/marks.svg);
+  width: 54px;
+  height: 40px;
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 26%;
+  left: 19%;
+  z-index: 1;
+
+  @media screen and (min-width: 768px) {
+    top: 33%;
+    left: 7.4%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    top: 40%;
+    left: 14.8%;
   }
 }
 
