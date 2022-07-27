@@ -1,7 +1,7 @@
-.container {
-  width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
+
+.customer-reviews__container {
+  max-width: 100%;
+
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0;
@@ -15,10 +15,79 @@
   }
   @media screen and (min-width: 1200px) {
     max-width: 1200px;
+
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
-.review__title {
+.swiper-slide {
+  z-index: 45;
+
+  &::after {
+    content: '';
+    background-image: url(/src/images/marks.svg);
+    width: 54px;
+    height: 40px;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 26%;
+    left: 19%;
+    z-index: 1;
+
+    @media screen and (min-width: 768px) {
+      top: 33%;
+      left: 7.4%;
+    }
+
+    @media screen and (min-width: 1200px) {
+      top: 40%;
+      left: 14.8%;
+    }
+  }
+}
+
+.swiper-pagination {
+  margin-top: 100px;
+}
+
+.customer-reviews__slider .swiper-pagination {
+  margin-bottom: -10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.customer-reviews__slider .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+}
+
+.customer-reviews__slider .swiper-pagination-bullet-active {
+  background-image: url(/src/images/House.svg);
+  width: 13px;
+  height: 13px;
+  background-color: inherit;
+}
+
+.slide-thumb {
+  margin: auto;
+  position: relative;
+  z-index: 5;
+  padding: 43px 58px 26px 65px;
+
+  @media screen and (min-width: 768px) {
+    padding: 37px 92px 44px 92px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 47px 202px 39px 202px;
+  }
+}
+
+.slide-thumb__text {
+  z-index: 2;
+  max-width: 100%;
+
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 500;
@@ -27,38 +96,56 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  height: 150px;
-  background: repeating-linear-gradient(
-    white,
-    white 30px,
-    #e1e1e1 32px,
-    #e1e1e1 20px
+
+  background-image: repeating-linear-gradient(
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0) 29px,
+    #e1e1e1 29px,
+    #e1e1e1 30px
+
   );
   background-image: url(/src/images/marks.svg);
   background-repeat: no-repeat;
 }
 
-// .review__title::after {
-//   background-image: url(/src/images/about-bg-desktop-2x.png);
-//   fill: pink;
-//   width: 50px;
-//   height: 50px;
-//   border: 0;
-//   display: block;
-//   padding: 0;
-//   position: absolute;
-// }
 
-.review__picture {
+.customer-reviews__image {
+
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 32px;
 }
 
-.review__name {
+.slide-thumb__name {
   text-align: center;
-}
 
-.review__name::after {
-  background-image: url(/src/images/symbol-defs.svg#icon-house);
+  margin-bottom: 30px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 186%;
+
+  &::before {
+    content: '';
+    background-image: url(/src/images/group_marks.svg);
+    width: 32px;
+    height: 4px;
+    background-color: inherit;
+    position: absolute;
+    margin-bottom: 10px;
+    z-index: 1;
+    left: 50%;
+    bottom: 12%;
+    transform: translate(-50%, -50%);
+
+    @media screen and (min-width: 1200px) {
+      bottom: 20%;
+    }
+
+    @media screen and (min-width: 768px) {
+      bottom: 19%;
+    }
+  }
+
 }

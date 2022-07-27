@@ -1,43 +1,82 @@
 <section class="customer-reviews">
-  <div class="review__container container">
-    <div class="slider single-item">
-      <div class="review__slider">
+
+  <div class="customer-reviews__container">
+  <div class="customer-reviews__slider swiper">
+    <div class="customer-reviews__slides swiper-wrapper">
+      <div class="swiper-slide">
+
         <img
-          src="/src/images/customer-1-mobile.png"
-          alt="review1"
-          class="review__picture"
+          srcset="
+          /src/images/customer-1-desktop.png 1x, 
+          /src/images/customer-1-desktop-2x.png 2x"
+          src="/src/images/customer-1-desktop.png"
+          alt="customer-1-desktop"
+          width="85px"
+          class="customer-reviews__image"
         />
-        <h2 class="review__title">
+
+        <div class="slide-thumb">
+        <h2 class="slide-thumb__text">
+
           Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
           Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
           ipsum primis in nibh vel risus.
         </h2>
+
+        </div>
+        <p class="slide-thumb__name">Emily, Los Angeles</p>
+
       </div>
       <div class="review__slider">
         <img
+          srcset="
+          /src/images/customer-2-desktop.png 1x, 
+          /src/images/customer-2-desktop-2x.png 2x"
           src="/src/images/customer-2-desktop.png"
-          alt="review1"
-          class="review__picture"
+          alt="customer2"
+          width="85"
+          class="customer-reviews__image"
         />
-        <h2 class="review__title">
+
+        <div class="slide-thumb">
+        <h2 class="slide-thumb__text">
+
           Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
           Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
           ipsum primis in nibh vel risus.
         </h2>
+
+        </div>
+        <p class="slide-thumb__name">Emily, Los Angeles</p>
+
       </div>
       <div class="review__slider">
         <img
+
+          srcset="
+          /src/images/customer-3-desktop.png 1x, 
+          /src/images/customer-3-desktop-2x.png 2x"
           src="/src/images/customer-3-desktop.png"
-          alt="review1"
-          class="review__picture"
+          alt="customer3"
+          width="85"
+          class="customer-reviews__image"
         />
-        <h2 class="review__title">
+        <div class="slide-thumb">
+        <h2 class="slide-thumb__text">
+
           Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
           Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
           ipsum primis in nibh vel risus.
         </h2>
+
+        </div>
+        <p class="slide-thumb__name">Emily, Los Angeles</p>
       </div>
     </div>
-    <p class="review__name">Emily, Los Angeles</p>
+    <div class="swiper-pagination"></div>
+  </div>
+    </div>
+  </div>
+
   </div>
 </section>
