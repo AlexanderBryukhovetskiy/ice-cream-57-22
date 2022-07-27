@@ -43,6 +43,9 @@ textarea {
     @media screen and (max-width: 768px) {
       padding-right: 293px;
     }
+      @media screen and (max-width: 760px) {
+        padding-right: 128px;
+      }
     @media screen and (max-width: 320px) {
       padding-right: 0;
     }
@@ -152,7 +155,7 @@ textarea {
     border-radius: 22px; 
     opacity: 1;
   }
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
 
@@ -229,7 +232,6 @@ textarea {
  justify-content: space-between;
  flex-direction: row-reverse;
  align-items: center;
-
  @media screen and (max-width: 768px) {
    opacity: 0;
    visibility: hidden;
@@ -299,7 +301,7 @@ textarea {
  left: 50%;
  top: 50%;
  transform: translate(-50%, -50%);
- z-index: 1;
+ z-index: 1000;
  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden {
@@ -316,6 +318,10 @@ textarea {
  background-color: $backgraund-about-color;
  border-radius: 15px;
  border:#D41443 1mm solid;
+ @media screen and (max-width: 768px) {
+  width: 250px;
+  height: 450px;
+ }
 }
 .elipse-cross {
  width: 30px;
@@ -327,6 +333,9 @@ textarea {
  border-radius: 50px;
  &:hover {
   background: $primary-text-color;
+ }
+ @media screen and (max-width: 768px) {
+  margin-left: 200px;
  }
 }
 .elipse-cross-modal {
@@ -370,6 +379,11 @@ textarea {
  margin-bottom: 12px;
  text-align: center;
  color: #D41443;
+ @media screen and (max-width: 768px) {
+  margin-bottom: 6px;
+  font-size: 16px;
+  font-weight: 400;
+ }
 }
 .modal__name {
  display: flex;
@@ -382,11 +396,20 @@ textarea {
 .name__modal {
  margin-bottom: 4px;
  color: $hero-elipce-color;
+ @media screen and (max-width: 768px) {
+  font-size: 14px;
+  font-weight: 400;
+ }
 }
 .modal-name {
  padding-left: 15px;
  height: 40px;
  width: 448px;
+ @media screen and (max-width: 768px) {
+  width: 230px;
+  font-size: 12px;
+  padding-left: 8px;
+ }
 }
 .modal__tel {
  display: flex;
@@ -417,6 +440,14 @@ textarea {
  padding-left: 16px;
  width: 448px;
  height: 120px;
+ @media screen and (max-width: 768px) {
+  width: 230px;
+  height: 75px;
+  font-size: 12px;
+  font-weight: 400;
+  padding-top: 6px;
+  padding-left: 8px;
+ }
 }
 .submit {
  display: flex;
@@ -431,5 +462,11 @@ textarea {
  &:hover {
   background-color: $model-color;
  }
-
+ @media screen and (max-width: 768px) {
+  width: 100px;
+  height: 25px;
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 14px;
+ }
 }
