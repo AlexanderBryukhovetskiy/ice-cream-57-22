@@ -1,1 +1,0 @@
-{"mappings":"AACA,IAAIA,OAAO,4BAA6B,CACtCC,WAAY,CACVC,GAAI,qBACJC,WAAW","sources":["src/index.js"],"sourcesContent":["\nnew Swiper('.customer-reviews__slider', {\n  pagination: {\n    el: '.swiper-pagination',\n    clickable: true,\n  },\n});\n"],"names":["Swiper","pagination","el","clickable"],"version":3,"file":"index.0f70870a.js.map"}
