@@ -7,7 +7,7 @@
                 <div class="products-list__cream">
                     <h4 class="prod-title__list ">ice cream</h4>
                     <p class="prod-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis. </p>
-                    <button type="button" class="products__btn-arrow-right">
+                    <button type="button" class="products__btn-arrow-right button" prod-modal-open-cream>
                     </button>
                 </div>
             </li>
@@ -15,7 +15,7 @@
                 <div class="products-list__coffee">
                     <h4 class="prod-title__list ">ice coffee</h4>
                     <p class="prod-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis. </p>
-                    <button type="button" class="products__btn-arrow-right">
+                    <button type="button" class="products__btn-arrow-right button " prod-modal-open-coffee>
                     </button>
                 </div>
             </li>
@@ -23,10 +23,66 @@
                 <div class="products-list__milkshakes">
                     <h4 class="prod-title__list ">milkshakes</h4>
                     <p class="prod-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis. </p>
-                    <button type="button" class="products__btn-arrow-right">
+                    <button type="button" class="products__btn-arrow-right button" prod-modal-open-milkshakes>
                     </button>
                 </div>
             </li>
         </ul>
     </div>
+
+    <div class="products-backdrop prod-cream" prod-modal-cream>
+        <div class="products-modal-cream">
+            <button type="button" class="products-modal-close-btn" prod-modal-close-cream>
+                <svg class=" cross" width="18" height="18">
+                    <use class="icon-cross" href="./images/symbol-defs.svg#products-icon-close"></use>
+                </svg>
+            </button>
+
+            <h4 class="products-prod-title__list">ice cream</h4>
+        
+            <div class="products-modal-form">
+                <p class="products-modal-titel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum tempore aspernatur reprehenderit, labore suscipit soluta aperiam perspiciatis asperiores harum doloribus, rem dolore assumenda reiciendis officiis laborum molestiae optio odio consectetur.
+                Illum architecto repudiandae nemo tempora dicta quasi voluptatem sed autem ea doloremque voluptatibus quae repellendus. </p>
+                <button type="submit" class="products-button">замовити</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="products-backdrop prod-coffee" prod-modal-coffee>
+        <div class="products-modal-coffee">
+            <button type="button" class="products-modal-close-btn" prod-modal-close-coffee>
+                <svg class=" cross" width="18" height="18">
+                    <use class="icon-cross" href="./images/symbol-defs.svg#products-icon-close"></use>
+                </svg>
+            </button>
+
+            <h4 class="products-prod-title__list">ice cream</h4>
+        
+            <div class="products-modal-form">
+                <p class="products-modal-titel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum tempore aspernatur reprehenderit, labore suscipit soluta aperiam perspiciatis asperiores harum doloribus, rem dolore assumenda reiciendis officiis laborum molestiae optio odio consectetur.
+                Illum architecto repudiandae nemo tempora dicta quasi voluptatem sed autem ea doloremque voluptatibus quae repellendus. </p>
+                <button type="submit" class="products-button">замовити</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="products-backdrop prod-milkshakes" prod-modal-milkshakes>
+        <div class="products-modal-milkshakes">
+            <button type="button" class="products-modal-close-btn" prod-modal-close-milkshakes>
+                <svg class=" cross" width="18" height="18">
+                    <use class="icon-cross" href="./images/symbol-defs.svg#products-icon-close"></use>
+                </svg>
+            </button>
+
+            <h4 class="products-prod-title__list">ice cream</h4>
+        
+            <div class="products-modal-form">
+                <p class="products-modal-titel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum tempore aspernatur reprehenderit, labore suscipit soluta aperiam perspiciatis asperiores harum doloribus, rem dolore assumenda reiciendis officiis laborum molestiae optio odio consectetur.
+                Illum architecto repudiandae nemo tempora dicta quasi voluptatem sed autem ea doloremque voluptatibus quae repellendus. </p>
+                <button type="submit" class="products-button">замовити</button>
+            </div>
+        </div>
+    </div>
 </section>
+
+<script src="./products.js"></script>
