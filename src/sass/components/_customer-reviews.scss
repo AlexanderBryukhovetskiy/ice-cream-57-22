@@ -1,24 +1,75 @@
-.container {
-  width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 0;
-  margin-top: 0;
-
+.customer-reviews__container {
+  padding-left: 20px;
+  padding-right: 20px;
   @media screen and (min-width: 480px) {
-    max-width: 480px;
   }
   @media screen and (min-width: 768px) {
-    max-width: 768px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
   @media screen and (min-width: 1200px) {
-    max-width: 1200px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
-
+.customer-reviews {
+  padding-bottom: 60px;
+}
+.swiper-slide {
+  &::after {
+    content: '';
+    background-image: url(/src/images/marks.svg);
+    width: 54px;
+    height: 40px;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 26%;
+    left: 19%;
+    z-index: 6;
+    @media screen and (min-width: 768px) {
+      top: 33%;
+      left: 7.4%;
+    }
+    @media screen and (min-width: 1200px) {
+      top: 40%;
+      left: 14.8%;
+    }
+  }
+}
+.swiper-pagination {
+  margin-top: 100px;
+}
+.slider .swiper-pagination {
+  margin-bottom: -10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.slider .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+}
+.slider .swiper-pagination-bullet-active {
+  background-image: url(/src/images/red-house.svg);
+  width: 13px;
+  height: 13px;
+  background-color: inherit;
+  background-size: cover;
+}
+.text__review {
+  background-color: #fafafa;
+  margin: auto;
+  z-index: 6;
+  padding: 43px 58px 26px 65px;
+  margin-bottom: 36px;
+  @media screen and (min-width: 768px) {
+    padding: 37px 92px 44px 92px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 47px 202px 39px 202px;
+  }
+}
 .review__title {
+  max-width: 100%;
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 500;
@@ -26,39 +77,56 @@
   line-height: 255%;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+  z-index: 10;
   text-align: center;
-  height: 150px;
-  background: repeating-linear-gradient(
-    white,
-    white 30px,
-    #e1e1e1 32px,
-    #e1e1e1 20px
+  background-image: repeating-linear-gradient(
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0) 29px,
+    #e1e1e1 29px,
+    #e1e1e1 30px
   );
-  background-image: url(/src/images/marks.svg);
-  background-repeat: no-repeat;
+  @media screen and (min-width: 768px) {
+    font-size: 15px;
+    line-height: 216%;
+    letter-spacing: 0.04em;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 186%;
+    letter-spacing: 0.04em;
+  }
 }
-
-// .review__title::after {
-//   background-image: url(/src/images/about-bg-desktop-2x.png);
-//   fill: pink;
-//   width: 50px;
-//   height: 50px;
-//   border: 0;
-//   display: block;
-//   padding: 0;
-//   position: absolute;
-// }
-
 .review__picture {
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
 }
-
 .review__name {
   text-align: center;
+  margin-bottom: 30px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 186%;
 }
-
-.review__name::after {
-  background-image: url(/src/images/symbol-defs.svg#icon-house);
+.review__name::before {
+  content: '';
+  background-image: url(/src/images/group-dots.svg);
+  width: 32px;
+  height: 4px;
+  background-color: inherit;
+  position: absolute;
+  margin-bottom: 10px;
+  z-index: 1;
+  left: 50%;
+  bottom: 12%;
+  transform: translate(-50%, -50%);
+  @media screen and (min-width: 1200px) {
+    bottom: 20%;
+  }
+  @media screen and (min-width: 768px) {
+    bottom: 19%;
+  }
 }
