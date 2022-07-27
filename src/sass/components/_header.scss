@@ -106,20 +106,35 @@ textarea {
 
 .site-nav-list__link-link {
  color: #D41443;
+ font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  transition: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover, :focus{
+   color: #D41443;
+  }
 }
 .site-nav-list__link {
  font-family: 'DM Sans';
  font-style: normal;
  font-weight: 700;
  font-size: 16px;
- line-height: 21px;
+ line-height: 1.31;
  align-items: center;
  color: #ffffff;
  margin-top: 52px;
+ transition: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+ &:hover, :focus{
+  color: #D41443;
+ }
  @media screen and (max-width: 1200px) {
   font-size: 14px;
+  line-height: 1.28;
   @media screen and (max-width: 320px) {
     font-size: 14px;
+    line-height: 1.28;
    }
  }
 }
@@ -128,17 +143,30 @@ textarea {
  width: 159px;
  height: 44px;
  color: #D41443;
+ cursor: pointer;
  border-radius: 22px; 
+ font-family: 'DM Sans';
+ font-style: normal;
+ font-weight: 700;
+ font-size: 16px;
+ line-height: 1.31;
  @media screen and (max-width: 768px) {
   margin-bottom: 20px;
   margin-top: 58px;
  }
-  &:hover {
+  &:hover, :focus {
     background-color: #ECEBEB;
+    transition: 350ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 .btn__block {
   padding-left: 141px;
+  cursor: pointer;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
   @media screen and (max-width: 768px) {
     padding-left: 32px;
   }
@@ -148,12 +176,18 @@ textarea {
   opacity: 0;
   @media screen and (max-width: 768px) {
     display: block;
+    cursor: pointer;
     background-color: $backgraund-about-color;
     width: 159px;
     height: 44px;
     color: #D41443;
     border-radius: 22px; 
     opacity: 1;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
   }
   @media screen and (max-width: 767px) {
     display: none;
@@ -177,7 +211,6 @@ textarea {
    margin: 0;
    padding: 0;
    border: none;
-   cursor: pointer;
    & .icon-cross {
      display: none;
    }
@@ -232,7 +265,9 @@ textarea {
  justify-content: space-between;
  flex-direction: row-reverse;
  align-items: center;
+ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
  @media screen and (max-width: 768px) {
+  position: fixed;
    opacity: 0;
    visibility: hidden;
    pointer-events: none;
@@ -262,11 +297,14 @@ textarea {
  }
 
  @media screen and (max-width: 768px) {
+  position: fixed;
    justify-content: space-between;
    flex-grow: 1;
    align-items: center;
+   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
  @media screen and (max-width: 320px) {
+  position: fixed;
   transition: 350ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateX(40%);
   &.is-open {
