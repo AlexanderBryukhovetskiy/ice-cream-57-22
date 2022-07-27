@@ -1,4 +1,4 @@
-.customer-reviews__container {
+.container {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -26,31 +26,40 @@
 
 .customer-reviews {
   padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide::after {
+  content: '';
+  background-image: url(/src/images/marks.svg);
+  width: 54px;
+  height: 40px;
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 26%;
+  left: 19%;
+  z-index: 1;
+
+  @media screen and (min-width: 768px) {
+    top: 33%;
+    left: 7.4%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    top: 40%;
+    left: 14.8%;
+  }
 }
 
 .swiper-slide {
-  &::after {
-    content: '';
-    background-image: url(/src/images/marks.svg);
-    width: 54px;
-    height: 40px;
-    position: absolute;
-    background-repeat: no-repeat;
-    top: 26%;
-    left: 19%;
-    z-index: 6;
-
-    @media screen and (min-width: 768px) {
-      top: 33%;
-      left: 7.4%;
-    }
-
-    @media screen and (min-width: 1200px) {
-      top: 40%;
-      left: 14.8%;
-    }
-  }
+  z-index: 45;
 }
+
 .swiper-pagination {
   margin-top: 100px;
 }
@@ -71,15 +80,13 @@
   width: 13px;
   height: 13px;
   background-color: inherit;
-  background-size: cover;
 }
 
 .text__review {
-  background-color: #fafafa;
   margin: auto;
-  z-index: 6;
+  position: relative;
+  z-index: 5;
   padding: 43px 58px 26px 65px;
-  margin-bottom: 36px;
 
   @media screen and (min-width: 768px) {
     padding: 37px 92px 44px 92px;
@@ -91,6 +98,7 @@
 }
 
 .review__title {
+  z-index: 2;
   max-width: 100%;
   font-family: 'DM Sans';
   font-style: normal;
@@ -99,14 +107,12 @@
   line-height: 255%;
   margin-left: auto;
   margin-right: auto;
-  position: relative;
-  z-index: 10;
   text-align: center;
   background-image: repeating-linear-gradient(
-    rgba(255, 255, 255, 0),
-    rgba(255, 255, 255, 0) 29px,
-    #e1e1e1 29px,
-    #e1e1e1 30px
+    rgba(255, 255, 255, 0) 16px,
+    rgba(255, 255, 255, 0) 39px,
+    #e1e1e1 41px,
+    #e1e1e1 40px
   );
   @media screen and (min-width: 768px) {
     font-size: 15px;
@@ -124,7 +130,6 @@
 .review__picture {
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 16px;
 }
 
 .review__name {
