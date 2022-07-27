@@ -1,0 +1,53 @@
+.gallery {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    background-color: #e5e5e5;
+    background-image: linear-gradient(to bottom,
+            #fff5f6 35%,
+            #ffffff 35%);
+
+    @include tablet {
+        background-image: linear-gradient(to bottom,
+                #fff5f6 55%,
+                #ffffff 55%);
+    }
+
+    @include desktop {
+        padding: 120px 94px;
+        background-image: linear-gradient(to bottom,
+                #fff5f6 31%,
+                #ffffff 31%);
+    }
+}
+
+.gallery__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.gallery__img {
+    @media screen-320-479px {
+        width: 320px;
+        height: 136px;
+    }
+
+    @include tablet {
+        width: 768px;
+        height: 327px;
+    }
+
+    @include desktop {
+        width: 1013px;
+        height: 430px;
+    }
+}
