@@ -12,7 +12,7 @@
     }
 }
 
-.footer-titles-list {
+.footer-titles {   
     display: flex;
     flex-direction: column;
     row-gap: 16px;
@@ -75,7 +75,6 @@
     }
 }
 
-
 .footer-contacts {
     display:flex;
     flex-direction: column;
@@ -96,7 +95,7 @@
 .footer-social-icon-list {
     display: flex;
     column-gap: 28px;
-    margin-left: auto;
+    //margin-left: auto;
 
     @include tablet {
         column-gap: 34px;
