@@ -1,16 +1,9 @@
 .advantages {
-  background-color: #FFF5F6;
+  background-color: #FFF5F6;;
   padding-top: 60px;
   list-style: none;
   text-decoration: none;
-  @media screen and (min-width: 768px) {
-    margin-left: 12px;
-    margin-right: 12px;
-  }
-  @media screen and (min-width: 1200px) {
-    margin-left: -4px;
-    margin-right: -4px;
-  }}
+ }
   .Group::before {
     content: url(../images/Group1x.png);
       display: inline-block;
