@@ -3,11 +3,7 @@
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
-  
-  @media screen and (min-width: 320px) {
-    width: 320px;
-  }
-  
+
   @include mobile {
     width: 480px;
   }

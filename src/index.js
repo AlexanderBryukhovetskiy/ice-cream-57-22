@@ -1,7 +1,10 @@
-
-new Swiper('.customer-reviews__slider', {
+new Swiper('.slider', {
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
+    Boolean: true,
+    autoplay: {
+      delay: 10,
+    },
   },
 });
