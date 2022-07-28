@@ -283,6 +283,7 @@
     border: none;
     background-color: rgba(212, 19, 66, 1);
     margin-bottom: 10px;
+  cursor: pointer;
 
     @include tablet {
         margin-bottom: 0;
@@ -340,9 +341,16 @@
 
 .contacts__franchise-button {
     height: 44px;
-    background-color: #ECEBEB;
+    background-color: #FFFFFF;
     border-radius: 22px;
     border: none;
+  cursor: pointer;
+  &:hover{
+    background-color: #ECEBEB;
+  }
+  &:focus{
+    background-color: #ECEBEB;
+  }
 }
 
 .contacts__franchise-button-text {
