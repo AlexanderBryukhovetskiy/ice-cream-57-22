@@ -1,3 +1,73 @@
+.customer-reviews__container {
+  padding-left: 20px;
+  padding-right: 20px;
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+.customer-reviews {
+  padding-bottom: 60px;
+}
+.swiper-slide {
+  &::after {
+    content: '';
+    background-image: url(/src/images/marks.svg);
+    width: 54px;
+    height: 40px;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 26%;
+    left: 19%;
+    z-index: 6;
+    @media screen and (min-width: 768px) {
+      top: 33%;
+      left: 7.4%;
+    }
+    @media screen and (min-width: 1200px) {
+      top: 40%;
+      left: 14.8%;
+    }
+  }
+}
+.swiper-pagination {
+  margin-top: 100px;
+}
+.slider .swiper-pagination {
+  margin-bottom: -10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.slider .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+}
+.slider .swiper-pagination-bullet-active {
+  background-image: url(/src/images/red-house.svg);
+  width: 13px;
+  height: 13px;
+  background-color: inherit;
+  background-size: cover;
+}
+.text__review {
+  background-color: #fafafa;
+  margin: auto;
+  z-index: 6;
+  padding: 43px 58px 26px 65px;
+  margin-bottom: 36px;
+  @media screen and (min-width: 768px) {
+    padding: 37px 92px 44px 92px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 47px 202px 39px 202px;
+  }
+}
 .review__title {
   max-width: 100%;
   font-family: 'DM Sans';
