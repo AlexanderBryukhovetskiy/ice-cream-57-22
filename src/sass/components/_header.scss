@@ -213,6 +213,7 @@ textarea {
   display: none;
   opacity: 0;
   @media screen and (max-width: 1199px) {
+    margin-left: 32px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -294,7 +295,7 @@ textarea {
  @media screen and (max-width: 768px) {
    z-index: 991;
    display: flex;
-   margin: 0;
+   margin-left: auto;
    padding: 0;
    border: none;
    & .icon-cross {
@@ -320,7 +321,6 @@ textarea {
  @media screen and (max-width: 320px) {
   z-index: 991;
   display: flex;
-  margin: 0;
   padding: 0;
   border: none;
   cursor: pointer;
