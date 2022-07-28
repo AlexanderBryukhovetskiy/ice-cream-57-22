@@ -39,10 +39,10 @@ textarea {
 }
 }
 .logo-group {
-  padding-left: 0;
-  @media screen and (max-width: 1199px) {
-    padding-right: 293px;
-  }
+  // padding-left: 0;
+  // @media screen and (max-width: 1199px) {
+  //   padding-right: 293px;
+  // }
     // @media screen and (min-width: 768px) {
     //   padding-right: 293px;
     // }
@@ -242,6 +242,7 @@ textarea {
 }
 .burger {
     background-color: #FFB8CA;
+    margin-left: auto;
 }
 .close {
   fill: $backgraund-about-color;
