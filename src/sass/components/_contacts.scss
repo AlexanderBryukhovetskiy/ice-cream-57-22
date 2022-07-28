@@ -1,5 +1,5 @@
 .contacts {
-    background: linear-gradient(0deg, #FFF5F6, 70%, #FFFFFF);  
+    background: linear-gradient(0deg, #FFF5F6 80%, #FFFFFF 20%);  
     padding-top: 40px;
     padding-bottom: 40px;
     @include desktop {
@@ -9,16 +9,29 @@
 }
 .contacts__contacts-list {
     list-style-type: none;
-    column-gap: 19px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     @include tablet {
         display: flex;
+        flex-direction: row;
         column-gap: 32px;
     }
     @include desktop {
         display: flex;
+        flex-direction: row;
         column-gap: 32px;
     }
 } 
+.contacts__card:not(:last-child) {
+    margin-bottom: 19px;
+    @include tablet {
+        margin-bottom: 0;
+    }
+    @include desktop {
+        margin-bottom: 0;
+    }
+}
 .contacts__card-bg {
     width: 100%;
     background-color: #ffffff;
@@ -28,7 +41,7 @@
     margin-right: 0;
     padding: 40px 32px;
     @include screen-320-479px {
-        padding: 20px 10px;
+        padding: 24px 20px;
     }
     @include mobile {
         max-width: 280px;
@@ -188,7 +201,9 @@
     list-style-type: none;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
+    padding-inline-start: 0;
     padding-top: 33px;
     padding-bottom: 40px;
         @include tablet {
