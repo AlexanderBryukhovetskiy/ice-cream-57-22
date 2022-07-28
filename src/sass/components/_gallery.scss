@@ -21,7 +21,7 @@
     }
 
     @include desktop {
-        padding: 120px 94px;
+        padding: 120px 0;
         background-image: linear-gradient(to bottom,
                 #fff5f6 31%,
                 #ffffff 31%);
@@ -33,6 +33,17 @@
     justify-content: center;
     align-items: center;
     padding: 0;
+
+    @include mobile {
+        width: 100%;
+    }
+
+    @include desktop {
+        padding-right: 94px;
+        padding-left: 94px;
+    }
+
+
 }
 
 
