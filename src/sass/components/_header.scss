@@ -39,19 +39,9 @@ textarea {
 }
 }
 .logo-group {
-  // padding-left: 0;
-  // @media screen and (max-width: 1199px) {
-  //   padding-right: 293px;
-  // }
-    // @media screen and (min-width: 768px) {
-    //   padding-right: 293px;
-    // }
-    // @media screen and (min-width: 769px) {
-    //   padding-right: 0;
-    // }
-    //   @media screen and (max-width: 760px) {
-    //     padding-right: 128px;
-    //   }
+    @media screen and (min-width: 1200px) {
+      margin-right: 128px;
+    }
     @media screen and (max-width: 320px) {
       padding-right: 0;
     }
@@ -71,11 +61,10 @@ textarea {
  margin-right: 128px;
 }
 
-.site-nav-list__item {
-  padding-right: 35px;
-}
+
 .site-nav-list {
  display: flex;
+ column-gap: 35px;
  align-items: center;
  padding: 0;
  @media screen and (max-width: 1199px) {
@@ -210,6 +199,12 @@ textarea {
 }
 .arrow {
   margin-left: 12px;
+  @media screen and (max-width: 768px) {
+    margin-left: 14px;
+  }
+  @media screen and (max-width: 320px) {
+    margin-left: 14px;
+  }
 }
 .arrow-icon {
   fill: $primary-text-color;
