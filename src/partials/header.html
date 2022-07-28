@@ -42,7 +42,7 @@
           </ul>
         </nav>
         </div>
-        <button data-modal-open="backdrop" class="btn-tablet" type="button">Buy now
+        <button data-modal-opened="" class="btn-tablet" type="button">Buy now
           <svg width="4px" height="8px" class="arrow">
             <use href="./images/symbol-defs.svg#icon-button-svg" class="arrow-icon"></use>
             </svg>
@@ -75,6 +75,33 @@
               <button type="submit" class="submit">Send</button>
           </form>
       </div>
+      <div class="backdrop is-hidden" data-modal="backdrop">
+        <div class="modal">
+            <button data-modal-closed="" class="elipse-cross">                    
+                <svg class="cross">
+                  <use class="icon-cross" href="./images/symbol-defs.svg#close"></use>
+              </svg></button>
+        <form class="form__modal" autocomplete="on">
+            <h2 class="modal__title">Place your order</h2>
+            <div class="modal__name">
+                <label for="name" class="name__modal">Name</label>
+                <input type="text" name="name" id="name" class="modal-name">
+            </div>
+            <div class="modal__tel">
+                <label for="tel" class="name__modal">Phone</label>
+                <input type="tel" name="tel" id="tel" class="modal-name">
+            </div>
+            <div class="modal__mail">
+                <label for="mail" class="name__modal">E-mail</label>
+                <input type="mail" name="mail" id="mail" class="modal-name">
+            </div>
+            <div class="modal__comment">
+                <label for="comment" class="name__modal">Comment</label>
+                <textarea name="comment" id="comment" placeholder="Texting..." class="modal-comment"></textarea>
+            </div>
+            <button type="submit" class="submit">Send</button>
+        </form>
+    </div>
           </div>
         </div>
     </div>
