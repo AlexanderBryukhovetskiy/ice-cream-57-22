@@ -58,7 +58,8 @@
   width: 13px;
   height: 13px;
   background-color: inherit;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .text__review {
   background-color: #fafafa;
