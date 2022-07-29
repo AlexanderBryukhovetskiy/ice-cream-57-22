@@ -20,8 +20,10 @@ textarea {
 
 .page-header__container {
  display: flex;
- min-height: 84px;
- background-color: #FFB8CA;
+ position: absolute;
+ z-index: 4;
+ left: 0;
+ right: 0;
  @media screen and (max-width: 320px) {
   min-height: 0;
  }
