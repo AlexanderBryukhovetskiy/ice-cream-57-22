@@ -308,7 +308,7 @@ textarea {
     width: 14px;
     height: 14px;
     background-color: $model-color;
-    position: absolute;
+    position: fixed;
     left: 735px;
     top: 20px;
    }
@@ -334,7 +334,7 @@ textarea {
    width: 14px;
    height: 14px;
    background-color: $model-color;
-   position: absolute;
+   position: fixed;
    left: 317px;
    top: 20px;
    left: 285px;
@@ -486,7 +486,7 @@ textarea {
  background-color: $backgraund-about-color;
  border-radius: 15px;
  border:#D41443 1mm solid;
- @media screen and (max-width: 768px) {
+ @media screen and (max-width: 1199px) {
   width: 250px;
   height: 450px;
  }
@@ -503,13 +503,13 @@ textarea {
  &:hover {
   background: $primary-text-color;
  }
- @media screen and (max-width: 768px) {
+ @media screen and (max-width: 1199px) {
   margin-left: 200px;
  }
 }
 .elipse-cross-modal {
   display: none;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1199px) {
     display: block;
     background-color: $model-color;
     padding-bottom: 24px;
@@ -552,7 +552,7 @@ cursor: pointer;
  margin-bottom: 12px;
  text-align: center;
  color: #D41443;
- @media screen and (max-width: 768px) {
+ @media screen and (max-width: 1199px) {
   margin-bottom: 6px;
   font-size: 16px;
   font-weight: 400;
@@ -569,7 +569,7 @@ cursor: pointer;
 .name__modal {
  margin-bottom: 4px;
  color: $hero-elipce-color;
- @media screen and (max-width: 768px) {
+ @media screen and (max-width: 1199px) {
   font-size: 14px;
   font-weight: 400;
  }
@@ -578,7 +578,7 @@ cursor: pointer;
  padding-left: 15px;
  height: 40px;
  width: 448px;
- @media screen and (max-width: 768px) {
+ @media screen and (max-width: 1199px) {
   width: 230px;
   font-size: 12px;
   padding-left: 8px;
@@ -613,7 +613,7 @@ cursor: pointer;
  padding-left: 16px;
  width: 448px;
  height: 120px;
- @media screen and (max-width: 768px) {
+ @media screen and (max-width: 1199px) {
   width: 230px;
   height: 75px;
   font-size: 12px;
@@ -637,7 +637,7 @@ cursor: pointer;
  &:hover {
   background-color: $model-color;
  }
- @media screen and (max-width: 768px) {
+ @media screen and (max-width: 1199px) {
   width: 100px;
   height: 25px;
   margin-top: 20px;
