@@ -284,30 +284,32 @@
     }
 }
 
-.products-modal-close-btn {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    width: 30px;
-    height: 30px;
+// .products-modal-close-btn {
+//     position: absolute;
+//     top: 8px;
+//     right: 8px;
+//     width: 30px;
+//     height: 30px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
 
-    padding: 0;
-    border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: #ecebeb;
-    cursor: pointer;
+//     padding: 0;
+//     border-radius: 50%;
+//     border: 1px solid rgba(0, 0, 0, 0.1);
+//     background-color: #ecebeb;
+//     cursor: pointer;
 
-   // background: $elipce-social-color;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//    // background: $elipce-social-color;
+//     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+//                 transform 500ms cubic-bezier(0.4, 0, 0.2, 1),;
 
-    &:hover, &:focus {
-    background: $model-color;
-    }
-}
+//     &:hover, &:focus {
+//     background: $model-color;
+//     transform: rotate(360deg)
+//     }
+// }
 
 .products-modal-close-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
