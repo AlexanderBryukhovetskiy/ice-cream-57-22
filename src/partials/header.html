@@ -1,28 +1,36 @@
 <header class="page-header__container">
-    <div class="container">
-      <div class="page-header__nav">
-        <div class="logo-group">
-          <a href="./index.html" lang="en"></a>
-            <svg width="199px" height="50px" aria-label="logo">
-                <use class="logo" href="./images/symbol-defs.svg#logo-group"></use>
-            </svg>
-          </a>
-      </div>
-        <button type="button" class="menu-btn" aria-expanded="false" aria-controls="mobile_menu_thumb" data-menu-button>
-          <svg width="20px" height="12px" aria-label="Переключатель мобільного меню" class="burger">
-            <use class="icon-cross" href="./images/symbol-defs.svg#close"></use>
-            <use class="icon-menu" href="./images/symbol-defs.svg#Burger"></use>
+  <div class="container">
+    <div class="page-header__nav">
+      <div class="logo-group">
+        <a href="./index.html" lang="en"></a>
+          <svg width="199px" height="50px" aria-label="logo">
+            <use class="logo" href="./images/symbol-defs.svg#logo-group">
+            </use>
           </svg>
-        </button>
-        <div class="mobile-menu-thumb" id="mobile_menu_thumb" data-menu="">
-          <div class="btn__block">
-            <button data-modal-open="" class="btn" type="button">Buy now
-              <svg width="4px" height="8px" class="arrow">
-                <use href="./images/symbol-defs.svg#icon-button-svg" class="arrow-icon"></use>
-                </svg>
-            </button>
-          </div>
-          <nav>
+        </a>
+      </div>
+      
+      <button type="button" class="menu-btn" aria-expanded="false" 
+              aria-controls="mobile_menu_thumb" data-menu-button>
+        <svg width="20px" height="12px" aria-label="Mobile menu switcher"
+          class="burger">
+          <use class="icon-cross" href="./images/symbol-defs.svg#close"></use>
+          <use class="icon-menu" href="./images/symbol-defs.svg#Burger"></use>
+        </svg>
+      </button>
+
+      <div class="mobile-menu-thumb" id="mobile_menu_thumb" data-menu="">
+        <div class="btn__block">
+          <button data-modal-open="" class="btn" type="button">Buy now
+            <svg width="4px" height="8px" class="arrow">
+              <use href="./images/symbol-defs.svg#icon-button-svg"
+                  class="arrow-icon">
+              </use>
+            </svg>
+          </button>
+        </div>
+
+        <nav>
           <ul class="site-nav-list">
             <li class="site-nav-list__item">
               <a class="site-nav-list__link-link">Home</a>
@@ -31,7 +39,9 @@
               <a class="site-nav-list__link" href="#about">About us</a>
             </li>
             <li class="site-nav-list__item">
-              <a class="site-nav-list__link" href="#advantages">How it’s made?</a>
+              <a class="site-nav-list__link" href="#advantages">
+                How it’s made?
+              </a>
             </li>
             <li class="site-nav-list__item">
               <a class="site-nav-list__link" href="#prod-ice">Our products</a>
@@ -40,70 +50,84 @@
               <a class="site-nav-list__link" href="#contacts-id">Contact</a>
             </li>
           </ul>
-        </nav>
-        </div>
-        <button data-modal-opened="" class="btn-tablet" type="button">Buy now
-          <svg width="4px" height="8px" class="arrow">
-            <use href="./images/symbol-defs.svg#icon-button-svg" class="arrow-icon"></use>
-            </svg>
-        </button>
-        <use href="./images/symbol-defs.svg#icon-button-svg"></use>
-        <div class="backdrop is-hidden" data-modal="backdrop">
+      </nav>
+      </div>
+
+      <button data-modal-opened="" class="btn-tablet" type="button">Buy now
+        <svg width="4px" height="8px" class="arrow">
+          <use href="./images/symbol-defs.svg#icon-button-svg" 
+            class="arrow-icon">
+          </use>
+        </svg>
+      </button>
+
+      <use href="./images/symbol-defs.svg#icon-button-svg"></use>
+
+      <div class="backdrop is-hidden" data-modal="backdrop">
           <div class="modal">
-              <button data-modal-close="" class="modal-close-btn">                    
-                  <svg class="cross">
-                    <use class="icon-cross" href="./images/symbol-defs.svg#products-icon-close"></use>
-                </svg></button>
-          <form class="form__modal" autocomplete="on">
+            <button data-modal-close="" class="modal-close-btn">
+              <svg class="cross">
+                <use class="icon-cross" 
+                  href="./images/symbol-defs.svg#products-icon-close">
+                </use>
+              </svg>
+            </button>
+
+            <form class="form__modal" autocomplete="on">
               <h2 class="modal__title">Place your order</h2>
               <div class="modal__name">
-                  <label for="name" class="name__modal">Name</label>
-                  <input type="text" name="name" id="name" class="modal-name">
+                <label for="name" class="name__modal">Name</label>
+                <input type="text" name="name" id="name" class="modal-name">
               </div>
               <div class="modal__tel">
-                  <label for="tel" class="name__modal">Phone</label>
-                  <input type="tel" name="tel" id="tel" class="modal-name">
+                <label for="tel" class="name__modal">Phone</label>
+                <input type="tel" name="tel" id="tel" class="modal-name">
               </div>
               <div class="modal__mail">
-                  <label for="mail" class="name__modal">E-mail</label>
-                  <input type="mail" name="mail" id="mail" class="modal-name">
+                <label for="mail" class="name__modal">E-mail</label>
+                <input type="mail" name="mail" id="mail" class="modal-name">
               </div>
               <div class="modal__comment">
-                  <label for="comment" class="name__modal">Comment</label>
-                  <textarea name="comment" id="comment" placeholder="Texting..." class="modal-comment"></textarea>
+                <label for="comment" class="name__modal">Comment</label>
+                <textarea name="comment" id="comment" placeholder="Texting..."
+                          class="modal-comment"></textarea>
               </div>
               <button type="submit" class="submit">Send</button>
           </form>
       </div>
+
       <div class="backdrop is-hidden" data-modal="backdrop">
         <div class="modal">
-            <button data-modal-closed="" class="elipse-cross">                    
-                <svg class="cross">
-                  <use class="icon-cross" href="./images/symbol-defs.svg#close"></use>
-              </svg></button>
+          <button data-modal-closed="" class="ellipse-cross">
+            <svg class="cross">
+              <use class="icon-cross" href="./images/symbol-defs.svg#close">
+              </use>
+            </svg>
+          </button>
         <form class="form__modal" autocomplete="on">
             <h2 class="modal__title">Place your order</h2>
             <div class="modal__name">
-                <label for="name" class="name__modal">Name</label>
-                <input type="text" name="name" id="name" class="modal-name">
+              <label for="name" class="name__modal">Name</label>
+              <input type="text" name="name" id="name" class="modal-name">
             </div>
             <div class="modal__tel">
-                <label for="tel" class="name__modal">Phone</label>
-                <input type="tel" name="tel" id="tel" class="modal-name">
+              <label for="tel" class="name__modal">Phone</label>
+              <input type="tel" name="tel" id="tel" class="modal-name">
             </div>
             <div class="modal__mail">
-                <label for="mail" class="name__modal">E-mail</label>
-                <input type="mail" name="mail" id="mail" class="modal-name">
+              <label for="mail" class="name__modal">E-mail</label>
+              <input type="mail" name="mail" id="mail" class="modal-name">
             </div>
             <div class="modal__comment">
-                <label for="comment" class="name__modal">Comment</label>
-                <textarea name="comment" id="comment" placeholder="Texting..." class="modal-comment"></textarea>
+              <label for="comment" class="name__modal">Comment</label>
+              <textarea name="comment" id="comment" placeholder="Texting..."
+                        class="modal-comment"></textarea>
             </div>
             <button type="submit" class="submit">Send</button>
         </form>
+      </div>
     </div>
-          </div>
-        </div>
     </div>
-  </header>
+  </div>
+</header>
 
